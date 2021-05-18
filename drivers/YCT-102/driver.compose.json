@@ -1,0 +1,31 @@
+{
+  "name": {
+    "en": "YCT-102"
+  },
+  "class": "remote",
+  "capabilities": [],
+  "energy": {
+    "batteries": [
+      "CR2032"
+    ]
+  },
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "pair": [
+    {
+      "id": "rf_transmitter_learn",
+      "options": {
+        "title": {
+          "en": "Press any button",
+          "nl": "Druk op een willekeurige knop"
+        },
+        "instruction": {
+          "en": "Press any button on your device.",
+          "nl": "Druk op een willekeurige knop op het apparaat"
+        }
+      }
+    }
+  ]
+}

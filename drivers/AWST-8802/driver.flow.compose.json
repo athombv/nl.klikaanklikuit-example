@@ -1,0 +1,53 @@
+{
+  "triggers": [
+    {
+      "id": "AWST-8802:received",
+      "title": {
+        "en": "Button is pressed",
+        "nl": "Knop is ingedrukt"
+      },
+      "args": [
+        {
+          "name": "unit",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "10",
+              "label": {
+                "en": "Left Button",
+                "nl": "Linker Knop"
+              }
+            },
+            {
+              "id": "11",
+              "label": {
+                "en": "Right Button",
+                "nl": "Rechter Knop"
+              }
+            }
+          ]
+        },
+        {
+          "name": "state",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "1",
+              "label": {
+                "en": "On",
+                "nl": "Aan"
+              }
+            },
+            {
+              "id": "0",
+              "label": {
+                "en": "Off",
+                "nl": "Uit"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

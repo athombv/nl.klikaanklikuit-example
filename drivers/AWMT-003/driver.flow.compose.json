@@ -1,0 +1,53 @@
+{
+  "triggers": [
+    {
+      "id": "AWMT-003:received",
+      "title": {
+        "en": "Button is pressed",
+        "nl": "Knop is ingedrukt"
+      },
+      "args": [
+        {
+          "name": "unit",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "00",
+              "label": {
+                "en": "Left Button",
+                "nl": "Linker Knop"
+              }
+            },
+            {
+              "id": "01",
+              "label": {
+                "en": "Right Button",
+                "nl": "Rechter Knop"
+              }
+            }
+          ]
+        },
+        {
+          "name": "state",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "1",
+              "label": {
+                "en": "On",
+                "nl": "Aan"
+              }
+            },
+            {
+              "id": "0",
+              "label": {
+                "en": "Off",
+                "nl": "Uit"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

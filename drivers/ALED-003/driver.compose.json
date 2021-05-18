@@ -1,0 +1,47 @@
+{
+  "name": {
+    "en": "ALED-003"
+  },
+  "class": "light",
+  "capabilities": [
+    "onoff"
+  ],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.jpg",
+    "small": "{{driverAssetsPath}}/images/small.jpg"
+  },
+  "energy": {
+    "batteries": [
+      "AAA",
+      "AAA",
+      "AAA"
+    ]
+  },
+  "pair": [
+    {
+      "id": "rf_receiver_learn",
+      "navigation": {
+        "next": "rf_receiver_add"
+      },
+      "options": {
+        "title": {
+          "en": "Open the battery compartment...",
+          "nl": "Open het batterijklepje..."
+        },
+        "instruction": {
+          "en": "Re-connect one battery to start pairing.",
+          "nl": "Verwijder een batterij en plaats deze terug."
+        }
+      }
+    },
+    {
+      "id": "rf_receiver_add",
+      "options": {
+        "instruction": {
+          "en": "Did the device turn off and on?",
+          "nl": "Ging het apparaat uit en aan?"
+        }
+      }
+    }
+  ]
+}

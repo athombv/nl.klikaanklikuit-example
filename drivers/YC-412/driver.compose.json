@@ -1,0 +1,14 @@
+{
+  "deprecated": true,
+  "name": {
+    "en": "YC-412"
+  },
+  "class": "socket",
+  "capabilities": [
+    "onoff"
+  ],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.jpg",
+    "small": "{{driverAssetsPath}}/images/small.jpg"
+  }
+}

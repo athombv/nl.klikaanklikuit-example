@@ -1,0 +1,11 @@
+{
+  "triggers": [
+    {
+      "id": "ACDB-7000B:received",
+      "title": {
+        "en": "Button is pressed",
+        "nl": "Knop is ingedrukt"
+      }
+    }
+  ]
+}

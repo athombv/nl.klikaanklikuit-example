@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="960px" height="960px" viewBox="0 0 960 960" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>drivers/acm-2300/assets/learnmode</title>
+    <desc>Created with Sketch.</desc>
+    <style type="text/css">
+    	#pair {
+    		animation: pair 2s infinite;
+    	}
+
+    	@keyframes pair {
+    		0%, 20%, 80%, 100% {
+    			fill: rgba(255,255,255,0);
+    		}
+    		50% {
+    			fill: #0074CC;
+    		}
+    	}
+    </style>
+    <g id="/drivers/acm-2300/assets/learnmode" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Path-4" stroke="#000000" stroke-width="15" stroke-linejoin="round" points="62.780324 112.610123 156 19.3904469 796.677922 19.3904469 889.897598 112.610123 889.897598 860.457386 809.149131 941.205853 156 941.205853 62.780324 847.986177"/>
+        <path d="M77.1149159,722.34029 L146.020257,722.34029 C155.961383,722.34029 164.020257,714.281416 164.020257,704.34029 L164.020257,252.047583 C164.020257,242.106457 172.079132,234.047583 182.020257,234.047583 L476.338961,234.047583 L476.338961,234.047583 L476,234.047583 L476,234.047583 L770.318704,234.047583 C780.259829,234.047583 788.318704,242.106457 788.318704,252.047583 L788.318704,704.34029 C788.318704,714.281416 796.377578,722.34029 806.318704,722.34029 L875.224045,722.34029" id="Path-5" stroke="#000000" stroke-width="7.5" stroke-linejoin="round"/>
+        <circle id="Oval" stroke="#000000" stroke-width="7.5" stroke-linejoin="round" cx="733" cy="156" r="48"/>
+        <circle id="Oval" stroke="#000000" stroke-width="7.5" stroke-linejoin="round" cx="370" cy="145" r="25"/>
+        <circle id="pair" fill="#0074CC" cx="370" cy="145" r="17"/>
+        <circle id="Oval" stroke="#000000" stroke-width="7.5" stroke-linejoin="round" cx="467" cy="145" r="13"/>
+        <rect id="Rectangle" stroke="#000000" stroke-width="7.5" stroke-linejoin="round" x="197" y="743" width="113" height="113"/>
+        <rect id="Rectangle" fill="#000000" x="217" y="763" width="73" height="73"/>
+        <rect id="Rectangle" stroke="#000000" stroke-width="7.5" stroke-linejoin="round" x="310" y="743" width="113" height="113"/>
+        <rect id="Rectangle" fill="#000000" x="330" y="763" width="73" height="73"/>
+        <rect id="Rectangle" stroke="#000000" stroke-width="7.5" stroke-linejoin="round" x="423" y="743" width="113" height="113"/>
+        <rect id="Rectangle" fill="#000000" x="443" y="763" width="73" height="73"/>
+        <rect id="Rectangle" stroke="#000000" stroke-width="7.5" stroke-linejoin="round" x="536" y="743" width="113" height="113"/>
+        <rect id="Rectangle" fill="#000000" x="556" y="763" width="73" height="73"/>
+        <rect id="Rectangle" stroke="#000000" stroke-width="7.5" stroke-linejoin="round" x="649" y="743" width="113" height="113"/>
+        <rect id="Rectangle" fill="#000000" x="669" y="763" width="73" height="73"/>
+    </g>
+</svg>

@@ -1,0 +1,5621 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "nl.klikaanklikuit",
+  "version": "7.0.3",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "name": {
+    "en": "KlikAanKlikUit"
+  },
+  "description": {
+    "en": "Remote control, affordable and easy",
+    "nl": "Draadloze bediening, betaalbaar en gemakkelijk"
+  },
+  "category": [
+    "appliances",
+    "lights",
+    "security"
+  ],
+  "tags": {
+    "en": [
+      "coco",
+      "clickonclickoff",
+      "click",
+      "trust"
+    ],
+    "nl": [
+      "kaku",
+      "klikaanklikuit",
+      "klik",
+      "trust"
+    ]
+  },
+  "permissions": [
+    "homey:wireless:433"
+  ],
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "author": {
+    "name": "Athom B.V.",
+    "email": "support@athom.com"
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "ABST-604"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "alarm_night"
+      ],
+      "energy": {
+        "batteries": [
+          "AAA",
+          "AAA"
+        ]
+      },
+      "images": {
+        "large": "/drivers/ABST-604/assets/images/large.png",
+        "small": "/drivers/ABST-604/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_transmitter_learn",
+          "options": {
+            "title": {
+              "en": "Trigger your sensor...",
+              "nl": "Laat de sensor afgaan..."
+            },
+            "instruction": {
+              "en": "Trigger your sensor manually or toggle the learn switch to DEL and then back to SET..",
+              "nl": "Laat de sensor handmatig afgaan of schuif de learn knop naar DEL en terug naar SET.."
+            }
+          }
+        }
+      ],
+      "id": "ABST-604"
+    },
+    {
+      "name": {
+        "en": "AC-1000"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "images": {
+        "large": "/drivers/AC-1000/assets/images/large.png",
+        "small": "/drivers/AC-1000/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press the button on your device once.",
+              "nl": "Druk een keer op de knop op het apparaat."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "AC-1000"
+    },
+    {
+      "deprecated": true,
+      "name": {
+        "en": "AC-300"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "images": {
+        "large": "/drivers/AC-300/assets/images/large.jpg",
+        "small": "/drivers/AC-300/assets/images/small.jpg"
+      },
+      "id": "AC-300"
+    },
+    {
+      "name": {
+        "en": "AC-300N"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "images": {
+        "large": "/drivers/AC-300N/assets/images/large.png",
+        "small": "/drivers/AC-300N/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press the button on your device once.",
+              "nl": "Druk een keer op de knop op het apparaat."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "AC-300N"
+    },
+    {
+      "name": {
+        "en": "AC-3500"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "images": {
+        "large": "/drivers/AC-3500/assets/images/large.png",
+        "small": "/drivers/AC-3500/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press the button on your device once.",
+              "nl": "Druk een keer op de knop op het apparaat."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "AC-3500"
+    },
+    {
+      "name": {
+        "en": "ACC-2300"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "images": {
+        "large": "/drivers/ACC-2300/assets/images/large.jpg",
+        "small": "/drivers/ACC-2300/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Unplug the device, then plug it back in. The LED will flash.",
+              "nl": "Verwijder het apparaat uit het stopcontact, plaatst deze vervolgens terug. De LED knippert nu."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "ACC-2300"
+    },
+    {
+      "name": {
+        "en": "ACC-250"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "images": {
+        "large": "/drivers/ACC-250/assets/images/large.png",
+        "small": "/drivers/ACC-250/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Unplug the device, then plug it back in. The LED will flash.",
+              "nl": "Verwijder het apparaat uit het stopcontact, plaatst deze vervolgens terug. De LED knippert nu."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "ACC-250"
+    },
+    {
+      "name": {
+        "en": "ACC-3500"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "images": {
+        "large": "/drivers/ACC-3500/assets/images/large.png",
+        "small": "/drivers/ACC-3500/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Unplug the device, then plug it back in. The LED will flash.",
+              "nl": "Verwijder het apparaat uit het stopcontact, plaatst deze vervolgens terug. De LED knippert nu."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "ACC-3500"
+    },
+    {
+      "name": {
+        "en": "ACCT-510"
+      },
+      "class": "remote",
+      "capabilities": [],
+      "energy": {
+        "batteries": [
+          "CR2450"
+        ]
+      },
+      "images": {
+        "large": "/drivers/ACCT-510/assets/images/large.png",
+        "small": "/drivers/ACCT-510/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_transmitter_learn",
+          "options": {
+            "title": {
+              "en": "Press any button",
+              "nl": "Druk op de knop"
+            },
+            "instruction": {
+              "en": "Press any button on your device.",
+              "nl": "Druk op de knop op het apparaat"
+            }
+          }
+        }
+      ],
+      "id": "ACCT-510"
+    },
+    {
+      "name": {
+        "en": "ACD-1000"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "images": {
+        "large": "/drivers/ACD-1000/assets/images/large.png",
+        "small": "/drivers/ACD-1000/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press the button on your device once.",
+              "nl": "Druk een keer op de knop op het apparaat."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "ACD-1000"
+    },
+    {
+      "name": {
+        "en": "ACD-200"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "images": {
+        "large": "/drivers/ACD-200/assets/images/large.png",
+        "small": "/drivers/ACD-200/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press the button on your device once.",
+              "nl": "Druk een keer op de knop op het apparaat."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "ACD-200"
+    },
+    {
+      "name": {
+        "en": "ACD-300"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "images": {
+        "large": "/drivers/ACD-300/assets/images/large.png",
+        "small": "/drivers/ACD-300/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press the button on your device once.",
+              "nl": "Druk een keer op de knop op het apparaat."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "ACD-300"
+    },
+    {
+      "name": {
+        "en": "ACD-3500"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "images": {
+        "large": "/drivers/ACD-3500/assets/images/large.png",
+        "small": "/drivers/ACD-3500/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press the button on your device once.",
+              "nl": "Druk een keer op de knop op het apparaat."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "ACD-3500"
+    },
+    {
+      "id": "ACDB-6600C",
+      "name": {
+        "en": "ACDB-6600C"
+      },
+      "class": "doorbell",
+      "capabilities": [],
+      "energy": {
+        "batteries": [
+          "AA",
+          "AA",
+          "AA"
+        ]
+      },
+      "images": {
+        "large": "/drivers/ACDB-6600C/assets/images/large.jpg",
+        "small": "/drivers/ACDB-6600C/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press the button on your device once. The LED should blink.",
+              "nl": "Druk een keer op de knop op het apparaat. De LED moet nu knipperen."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "ACDB-7000A"
+      },
+      "class": "remote",
+      "capabilities": [],
+      "energy": {
+        "batteries": [
+          "CR2032"
+        ]
+      },
+      "images": {
+        "large": "/drivers/ACDB-7000A/assets/images/large.png",
+        "small": "/drivers/ACDB-7000A/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_transmitter_learn",
+          "options": {
+            "title": {
+              "en": "Press the button",
+              "nl": "Druk op de knop"
+            },
+            "instruction": {
+              "en": "Press the button on your device.",
+              "nl": "Druk op de knop op het apparaat"
+            }
+          }
+        }
+      ],
+      "id": "ACDB-7000A"
+    },
+    {
+      "name": {
+        "en": "ACDB-7000B"
+      },
+      "class": "remote",
+      "capabilities": [],
+      "energy": {
+        "batteries": [
+          "A23"
+        ]
+      },
+      "images": {
+        "large": "/drivers/ACDB-7000B/assets/images/large.png",
+        "small": "/drivers/ACDB-7000B/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_transmitter_learn",
+          "options": {
+            "title": {
+              "en": "Press the button",
+              "nl": "Druk op de knop"
+            },
+            "instruction": {
+              "en": "Press the button on your device.",
+              "nl": "Druk op de knop op het apparaat"
+            }
+          }
+        }
+      ],
+      "id": "ACDB-7000B"
+    },
+    {
+      "name": {
+        "en": "ACDB-7000C"
+      },
+      "class": "doorbell",
+      "capabilities": [],
+      "images": {
+        "large": "/drivers/ACDB-7000C/assets/images/large.png",
+        "small": "/drivers/ACDB-7000C/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press the button on your device once. The LED should blink.",
+              "nl": "Druk een keer op de knop op het apparaat. De LED moet nu knipperen."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "ACDB-7000C"
+    },
+    {
+      "name": {
+        "en": "ACDB-8000A"
+      },
+      "class": "remote",
+      "capabilities": [],
+      "energy": {
+        "batteries": [
+          "CR2032"
+        ]
+      },
+      "images": {
+        "large": "/drivers/ACDB-8000A/assets/images/large.png",
+        "small": "/drivers/ACDB-8000A/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_transmitter_learn",
+          "options": {
+            "title": {
+              "en": "Press the button",
+              "nl": "Druk op de knop"
+            },
+            "instruction": {
+              "en": "Press the button on your device.",
+              "nl": "Druk op de knop op het apparaat"
+            }
+          }
+        }
+      ],
+      "id": "ACDB-8000A"
+    },
+    {
+      "name": {
+        "en": "ACDB-8000C"
+      },
+      "class": "doorbell",
+      "capabilities": [],
+      "images": {
+        "large": "/drivers/ACDB-8000C/assets/images/large.png",
+        "small": "/drivers/ACDB-8000C/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press the button on your device once. The LED should blink.",
+              "nl": "Druk een keer op de knop op het apparaat. De LED moet nu knipperen."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "ACDB-8000C"
+    },
+    {
+      "name": {
+        "en": "ACDB-9000C"
+      },
+      "class": "doorbell",
+      "capabilities": [],
+      "images": {
+        "large": "/drivers/ACDB-9000C/assets/images/large.png",
+        "small": "/drivers/ACDB-9000C/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press the button on your device once. The LED should blink.",
+              "nl": "Druk een keer op de knop op het apparaat. De LED moet nu knipperen."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "ACDB-9000C"
+    },
+    {
+      "name": {
+        "en": "ACM-100"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "images": {
+        "large": "/drivers/ACM-100/assets/images/large.jpg",
+        "small": "/drivers/ACM-100/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press the button on the bottom of your device once.",
+              "nl": "Druk een keer op de knop aan de onderkant van het apparaat."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "ACM-100"
+    },
+    {
+      "name": {
+        "en": "ACM-1000"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "images": {
+        "large": "/drivers/ACM-1000/assets/images/large.png",
+        "small": "/drivers/ACM-1000/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press the button on your device once.",
+              "nl": "Druk een keer op de knop op het apparaat."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?."
+            }
+          }
+        }
+      ],
+      "id": "ACM-1000"
+    },
+    {
+      "name": {
+        "en": "ACM-2000"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "images": {
+        "large": "/drivers/ACM-2000/assets/images/large.jpg",
+        "small": "/drivers/ACM-2000/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press the button on your device once.",
+              "nl": "Druk een keer op de knop op het apparaat."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?."
+            }
+          }
+        }
+      ],
+      "id": "ACM-2000"
+    },
+    {
+      "name": {
+        "en": "ACM-2300-HC"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "images": {
+        "large": "/drivers/ACM-2300-HC/assets/images/large.png",
+        "small": "/drivers/ACM-2300-HC/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press the button on your device once.",
+              "nl": "Druk een keer op de knop op het apparaat."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?."
+            }
+          }
+        }
+      ],
+      "id": "ACM-2300-HC",
+      "settings": [
+        {
+          "id": "timeout",
+          "type": "dropdown",
+          "value": "0",
+          "label": {
+            "en": "Timeout to turn off",
+            "nl": "Vertraging om uit te schakelen"
+          },
+          "hint": {
+            "en": "Please select the same setting on the physical device",
+            "nl": "Selecteer dezelfde tijd als op het fysieke apparaat"
+          },
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Never",
+                "nl": "Nooit"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "1 Minute",
+                "nl": "1 Minuut"
+              }
+            },
+            {
+              "id": "10",
+              "label": {
+                "en": "10 Minutes",
+                "nl": "10 Minuten"
+              }
+            },
+            {
+              "id": "60",
+              "label": {
+                "en": "1 Hour",
+                "nl": "1 Uur"
+              }
+            },
+            {
+              "id": "240",
+              "label": {
+                "en": "4 Hours",
+                "nl": "4 Uur"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "ACM-2300H"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "images": {
+        "large": "/drivers/ACM-2300H/assets/images/large.jpg",
+        "small": "/drivers/ACM-2300H/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press the button on your device once.",
+              "nl": "Druk een keer op de knop op het apparaat."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?."
+            }
+          }
+        }
+      ],
+      "id": "ACM-2300H"
+    },
+    {
+      "name": {
+        "en": "ACM-250"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "images": {
+        "large": "/drivers/ACM-250/assets/images/large.png",
+        "small": "/drivers/ACM-250/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press the button on your device once.",
+              "nl": "Druk een keer op de knop op het apparaat."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "ACM-250"
+    },
+    {
+      "name": {
+        "en": "ACM-250-LD"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "images": {
+        "large": "/drivers/ACM-250-LD/assets/images/large.png",
+        "small": "/drivers/ACM-250-LD/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press the button on your device once.",
+              "nl": "Druk een keer op de knop op het apparaat."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "ACM-250-LD",
+      "settings": [
+        {
+          "id": "timeout",
+          "type": "dropdown",
+          "value": "0",
+          "label": {
+            "en": "Timeout to turn off",
+            "nl": "Vertraging om uit te schakelen"
+          },
+          "hint": {
+            "en": "Please select the same setting on the physical device",
+            "nl": "Selecteer dezelfde tijd als op het fysieke apparaat"
+          },
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Never",
+                "nl": "Nooit"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "1 Minute",
+                "nl": "1 Minuut"
+              }
+            },
+            {
+              "id": "10",
+              "label": {
+                "en": "10 Minutes",
+                "nl": "10 Minuten"
+              }
+            },
+            {
+              "id": "60",
+              "label": {
+                "en": "1 Hour",
+                "nl": "1 Uur"
+              }
+            },
+            {
+              "id": "240",
+              "label": {
+                "en": "4 Hours",
+                "nl": "4 Uur"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "ACM-300"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "images": {
+        "large": "/drivers/ACM-300/assets/images/large.png",
+        "small": "/drivers/ACM-300/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press the button on your device once.",
+              "nl": "Druk een keer op de knop op het apparaat."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "ACM-300"
+    },
+    {
+      "name": {
+        "en": "ACM-3500"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "images": {
+        "large": "/drivers/ACM-3500/assets/images/large.png",
+        "small": "/drivers/ACM-3500/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press the button on your device once.",
+              "nl": "Druk een keer op de knop op het apparaat."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?."
+            }
+          }
+        }
+      ],
+      "id": "ACM-3500"
+    },
+    {
+      "name": {
+        "en": "ACM-LV10"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "images": {
+        "large": "/drivers/ACM-LV10/assets/images/large.jpg",
+        "small": "/drivers/ACM-LV10/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press the button on your device once.",
+              "nl": "Druk een keer op de knop op het apparaat."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "ACM-LV10"
+    },
+    {
+      "name": {
+        "en": "ACM-LV24"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "images": {
+        "large": "/drivers/ACM-LV24/assets/images/large.jpg",
+        "small": "/drivers/ACM-LV24/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Trigger your sensor...",
+              "nl": "Laat de sensor afgaan..."
+            },
+            "instruction": {
+              "en": "Press the connect button one second (next to the LED indicator).",
+              "nl": "Druk 1 seconde op de verbindknop (naast de LED indicator)."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "ACM-LV24"
+    },
+    {
+      "name": {
+        "en": "ACST-606"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "alarm_contact"
+      ],
+      "energy": {
+        "batteries": [
+          "CR1632"
+        ]
+      },
+      "images": {
+        "large": "/drivers/ACST-606/assets/images/large.png",
+        "small": "/drivers/ACST-606/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_transmitter_learn",
+          "options": {
+            "title": {
+              "en": "Trigger your sensor...",
+              "nl": "Laat de sensor afgaan..."
+            },
+            "instruction": {
+              "en": "Move the parts of the contact sensor together.",
+              "nl": "Beweeg de delen van de contact sensor naar elkaar toe."
+            }
+          }
+        }
+      ],
+      "id": "ACST-606",
+      "settings": [
+        {
+          "id": "timeout",
+          "type": "dropdown",
+          "value": "0",
+          "label": {
+            "en": "Timeout to reset sensor value",
+            "nl": "Vertraging om sensor waarde te resetten"
+          },
+          "hint": {
+            "en": "Please select the same setting on the physical device",
+            "nl": "Selecteer dezelfde tijd als op het fysieke apparaat"
+          },
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Never",
+                "nl": "Nooit"
+              }
+            },
+            {
+              "id": "5000",
+              "label": {
+                "en": "5 Seconds",
+                "nl": "5 Seconden"
+              }
+            },
+            {
+              "id": "10000",
+              "label": {
+                "en": "10 Seconds",
+                "nl": "10 Seconden"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "1 Minute",
+                "nl": "1 Minuut"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "2 Minutes",
+                "nl": "2 Minuten"
+              }
+            },
+            {
+              "id": "5",
+              "label": {
+                "en": "5 Minutes",
+                "nl": "5 Minuten"
+              }
+            },
+            {
+              "id": "10",
+              "label": {
+                "en": "10 Minutes",
+                "nl": "10 Minuten"
+              }
+            },
+            {
+              "id": "15",
+              "label": {
+                "en": "15 Minutes",
+                "nl": "15 Minuten"
+              }
+            },
+            {
+              "id": "30",
+              "label": {
+                "en": "30 Minutes",
+                "nl": "30 Minuten"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "ACST-9900"
+      },
+      "class": "remote",
+      "capabilities": [],
+      "images": {
+        "large": "/drivers/ACST-9900/assets/images/large.png",
+        "small": "/drivers/ACST-9900/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_transmitter_learn",
+          "options": {
+            "title": {
+              "en": "Press the button",
+              "nl": "Druk op de knop"
+            },
+            "instruction": {
+              "en": "Press the button on your device.",
+              "nl": "Druk op de knop op het apparaat"
+            }
+          }
+        }
+      ],
+      "id": "ACST-9900"
+    },
+    {
+      "name": {
+        "en": "AFR-060"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff"
+      ],
+      "images": {
+        "large": "/drivers/AFR-060/assets/images/large.jpg",
+        "small": "/drivers/AFR-060/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press the button on your device once.",
+              "nl": "Druk een keer op de knop op het apparaat."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "AFR-060"
+    },
+    {
+      "name": {
+        "en": "AFR-100"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "images": {
+        "large": "/drivers/AFR-100/assets/images/large.jpg",
+        "small": "/drivers/AFR-100/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press the button on your device once.",
+              "nl": "Druk een keer op de knop op het apparaat."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "AFR-100"
+    },
+    {
+      "name": {
+        "en": "AGC-200"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "images": {
+        "large": "/drivers/AGC-200/assets/images/large.jpg",
+        "small": "/drivers/AGC-200/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Unplug the device, then plug it back in.",
+              "nl": "Verwijder het apparaat uit het stopcontact, plaatst deze vervolgens terug."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "AGC-200"
+    },
+    {
+      "name": {
+        "en": "AGC-3500"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "images": {
+        "large": "/drivers/AGC-3500/assets/images/large.jpg",
+        "small": "/drivers/AGC-3500/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Unplug the device, then plug it back in.",
+              "nl": "Verwijder het apparaat uit het stopcontact, plaatst deze vervolgens terug."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "AGC-3500"
+    },
+    {
+      "name": {
+        "en": "AGDR-200"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "images": {
+        "large": "/drivers/AGDR-200/assets/images/large.jpg",
+        "small": "/drivers/AGDR-200/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press the button on your device once.",
+              "nl": "Druk een keer op de knop op het apparaat."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "AGDR-200"
+    },
+    {
+      "name": {
+        "en": "AGDR-300"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "images": {
+        "large": "/drivers/AGDR-300/assets/images/large.jpg",
+        "small": "/drivers/AGDR-300/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press the button on your device once.",
+              "nl": "Druk een keer op de knop op het apparaat."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "AGDR-300"
+    },
+    {
+      "name": {
+        "en": "AGDR-3500"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "images": {
+        "large": "/drivers/AGDR-3500/assets/images/large.jpg",
+        "small": "/drivers/AGDR-3500/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press the button on your device once.",
+              "nl": "Druk een keer op de knop op het apparaat."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "AGDR-3500"
+    },
+    {
+      "name": {
+        "en": "AILD-250"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "images": {
+        "large": "/drivers/AILD-250/assets/images/large.png",
+        "small": "/drivers/AILD-250/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press the button on your device once.",
+              "nl": "Druk een keer op de knop op het apparaat."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "AILD-250"
+    },
+    {
+      "name": {
+        "en": "AILD-3500"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "images": {
+        "large": "/drivers/AILS-3500/assets/images/large.png",
+        "small": "/drivers/AILS-3500/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press the button on your device once.",
+              "nl": "Druk een keer op de knop op het apparaat."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?."
+            }
+          }
+        }
+      ],
+      "id": "AILS-3500"
+    },
+    {
+      "name": {
+        "en": "AKCT-510"
+      },
+      "class": "remote",
+      "capabilities": [],
+      "energy": {
+        "batteries": [
+          "CR2032"
+        ]
+      },
+      "images": {
+        "large": "/drivers/AKCT-510/assets/images/large.jpg",
+        "small": "/drivers/AKCT-510/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_transmitter_learn",
+          "options": {
+            "title": {
+              "en": "Press any button",
+              "nl": "Druk op de knop"
+            },
+            "instruction": {
+              "en": "Press any button on your device.",
+              "nl": "Druk op de knop op het apparaat"
+            }
+          }
+        }
+      ],
+      "id": "AKCT-510"
+    },
+    {
+      "name": {
+        "en": "ALED-003"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff"
+      ],
+      "images": {
+        "large": "/drivers/ALED-003/assets/images/large.jpg",
+        "small": "/drivers/ALED-003/assets/images/small.jpg"
+      },
+      "energy": {
+        "batteries": [
+          "AAA",
+          "AAA",
+          "AAA"
+        ]
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Open the battery compartment...",
+              "nl": "Open het batterijklepje..."
+            },
+            "instruction": {
+              "en": "Re-connect one battery to start pairing.",
+              "nl": "Verwijder een batterij en plaats deze terug."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "ALED-003"
+    },
+    {
+      "name": {
+        "en": "ALED-2009"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "energy": {
+        "usageOn": 9,
+        "usageOff": 1
+      },
+      "images": {
+        "large": "/drivers/ALED-2009/assets/images/large.jpg",
+        "small": "/drivers/ALED-2009/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Toggle the device",
+              "nl": "Schakel het apparaat"
+            },
+            "instruction": {
+              "en": "Toggle the device three times off and on.",
+              "nl": "Schakel het apparaat drie keer uit en aan."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "ALED-2009"
+    },
+    {
+      "name": {
+        "en": "ALED-2709"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "energy": {
+        "usageOn": 9,
+        "usageOff": 1
+      },
+      "images": {
+        "large": "/drivers/ALED-2709/assets/images/large.jpg",
+        "small": "/drivers/ALED-2709/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Toggle the device",
+              "nl": "Schakel het apparaat"
+            },
+            "instruction": {
+              "en": "Toggle the device three times off and on.",
+              "nl": "Schakel het apparaat drie keer uit en aan."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "ALED-2709"
+    },
+    {
+      "name": {
+        "en": "ALED-EC2206"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "energy": {
+        "usageOn": 6,
+        "usageOff": 0.5
+      },
+      "images": {
+        "large": "/drivers/ALED-EC2206/assets/images/large.jpg",
+        "small": "/drivers/ALED-EC2206/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Toggle the device",
+              "nl": "Schakel het apparaat"
+            },
+            "instruction": {
+              "en": "Toggle the device three times off and on.",
+              "nl": "Schakel het apparaat drie keer uit en aan."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "ALED-EC2206"
+    },
+    {
+      "name": {
+        "en": "ALED-G2706"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "energy": {
+        "usageOn": 6,
+        "usageOff": 1
+      },
+      "images": {
+        "large": "/drivers/ALED-G2706/assets/images/large.jpg",
+        "small": "/drivers/ALED-G2706/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Toggle the device",
+              "nl": "Schakel het apparaat"
+            },
+            "instruction": {
+              "en": "Toggle the device three times off and on.",
+              "nl": "Schakel het apparaat drie keer uit en aan."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "ALED-G2706"
+    },
+    {
+      "name": {
+        "en": "ALED-MR2705"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "energy": {
+        "usageOn": 5,
+        "usageOff": 1
+      },
+      "images": {
+        "large": "/drivers/ALED-MR2705/assets/images/large.jpg",
+        "small": "/drivers/ALED-MR2705/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Toggle the device",
+              "nl": "Schakel het apparaat"
+            },
+            "instruction": {
+              "en": "Toggle the device three times off and on.",
+              "nl": "Schakel het apparaat drie keer uit en aan."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "ALED-MR2705"
+    },
+    {
+      "name": {
+        "en": "AMST-606"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "alarm_contact"
+      ],
+      "energy": {
+        "batteries": [
+          "CR2032"
+        ]
+      },
+      "images": {
+        "large": "/drivers/AMST-606/assets/images/large.png",
+        "small": "/drivers/AMST-606/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_transmitter_learn",
+          "options": {
+            "title": {
+              "en": "Trigger your sensor...",
+              "nl": "Laat de sensor afgaan..."
+            },
+            "instruction": {
+              "en": "Move the parts of the contact sensor together.",
+              "nl": "Beweeg de delen van de contact sensor naar elkaar toe."
+            }
+          }
+        }
+      ],
+      "id": "AMST-606",
+      "settings": [
+        {
+          "id": "timeout",
+          "type": "dropdown",
+          "value": "0",
+          "label": {
+            "en": "Timeout to reset sensor value",
+            "nl": "Vertraging om sensor waarde te resetten"
+          },
+          "hint": {
+            "en": "Please select the same setting on the physical device",
+            "nl": "Selecteer dezelfde tijd als op het fysieke apparaat"
+          },
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Never",
+                "nl": "Nooit"
+              }
+            },
+            {
+              "id": "5000",
+              "label": {
+                "en": "5 Seconds",
+                "nl": "5 Seconden"
+              }
+            },
+            {
+              "id": "10000",
+              "label": {
+                "en": "10 Seconds",
+                "nl": "10 Seconden"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "1 Minute",
+                "nl": "1 Minuut"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "2 Minutes",
+                "nl": "2 Minuten"
+              }
+            },
+            {
+              "id": "5",
+              "label": {
+                "en": "5 Minutes",
+                "nl": "5 Minuten"
+              }
+            },
+            {
+              "id": "10",
+              "label": {
+                "en": "10 Minutes",
+                "nl": "10 Minuten"
+              }
+            },
+            {
+              "id": "15",
+              "label": {
+                "en": "15 Minutes",
+                "nl": "15 Minuten"
+              }
+            },
+            {
+              "id": "30",
+              "label": {
+                "en": "30 Minutes",
+                "nl": "30 Minuten"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "AMU-500"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "images": {
+        "large": "/drivers/AMU-500/assets/images/large.jpg",
+        "small": "/drivers/AMU-500/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press the button on your device once.",
+              "nl": "Druk een keer op de knop op het apparaat."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?."
+            }
+          }
+        }
+      ],
+      "id": "AMU-500",
+      "settings": [
+        {
+          "id": "timeout",
+          "type": "dropdown",
+          "value": "0",
+          "label": {
+            "en": "Timeout to turn off",
+            "nl": "Vertraging om uit te schakelen"
+          },
+          "hint": {
+            "en": "Please select the same setting on the physical device",
+            "nl": "Selecteer dezelfde tijd als op het fysieke apparaat"
+          },
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Never",
+                "nl": "Nooit"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "1 Minute",
+                "nl": "1 Minuut"
+              }
+            },
+            {
+              "id": "10",
+              "label": {
+                "en": "10 Minutes",
+                "nl": "10 Minuten"
+              }
+            },
+            {
+              "id": "60",
+              "label": {
+                "en": "1 Hour",
+                "nl": "1 Uur"
+              }
+            },
+            {
+              "id": "240",
+              "label": {
+                "en": "4 Hours",
+                "nl": "4 Uur"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "APA2-2300R"
+      },
+      "class": "remote",
+      "capabilities": [],
+      "energy": {
+        "batteries": [
+          "CR2032"
+        ]
+      },
+      "images": {
+        "large": "/drivers/APA2-2300R/assets/images/large.jpg",
+        "small": "/drivers/APA2-2300R/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_transmitter_learn",
+          "options": {
+            "title": {
+              "en": "Press any button",
+              "nl": "Druk op een willekeurige knop"
+            },
+            "instruction": {
+              "en": "Press any button on your device.",
+              "nl": "Druk op een willekeurige knop op het apparaat"
+            }
+          }
+        }
+      ],
+      "id": "APA2-2300R"
+    },
+    {
+      "name": {
+        "en": "APA2-2300R"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "images": {
+        "large": "/drivers/APA2-2300RS/assets/images/large.jpg",
+        "small": "/drivers/APA2-2300RS/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Unplug the device...",
+              "nl": "Verwijder het apparaat..."
+            },
+            "instruction": {
+              "en": "Unplug the device from the outlet, then plug it back in.",
+              "nl": "Haal het apparaat uit het stopcontact en stop deze daarna weer terug."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "APA2-2300RS"
+    },
+    {
+      "name": {
+        "en": "APA3-1500R"
+      },
+      "class": "remote",
+      "capabilities": [],
+      "energy": {
+        "batteries": [
+          "CR2032"
+        ]
+      },
+      "images": {
+        "large": "/drivers/APA3-1500R/assets/images/large.jpg",
+        "small": "/drivers/APA3-1500R/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_transmitter_learn",
+          "options": {
+            "title": {
+              "en": "Press any button",
+              "nl": "Druk op een willekeurige knop"
+            },
+            "instruction": {
+              "en": "Press any button on your device.",
+              "nl": "Druk op een willekeurige knop op het apparaat"
+            }
+          }
+        }
+      ],
+      "id": "APA3-1500R"
+    },
+    {
+      "name": {
+        "en": "APA3-1500R"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "images": {
+        "large": "/drivers/APA3-1500RS/assets/images/large.jpg",
+        "small": "/drivers/APA3-1500RS/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Unplug the device...",
+              "nl": "Verwijder het apparaat..."
+            },
+            "instruction": {
+              "en": "Unplug the device from the outlet, then plug it back in.",
+              "nl": "Haal het apparaat uit het stopcontact en stop deze daarna weer terug."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "APA3-1500RS"
+    },
+    {
+      "name": {
+        "en": "APC3-2300R"
+      },
+      "class": "remote",
+      "capabilities": [],
+      "energy": {
+        "batteries": [
+          "CR2032"
+        ]
+      },
+      "images": {
+        "large": "/drivers/APC3-2300R/assets/images/large.jpg",
+        "small": "/drivers/APC3-2300R/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_transmitter_learn",
+          "options": {
+            "title": {
+              "en": "Press any button",
+              "nl": "Druk op een willekeurige knop"
+            },
+            "instruction": {
+              "en": "Press any button on your device.",
+              "nl": "Druk op een willekeurige knop op het apparaat"
+            }
+          }
+        }
+      ],
+      "id": "APC3-2300R"
+    },
+    {
+      "name": {
+        "en": "APC3-2300R"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "images": {
+        "large": "/drivers/APC3-2300RS/assets/images/large.jpg",
+        "small": "/drivers/APC3-2300RS/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Unplug the device...",
+              "nl": "Verwijder het apparaat..."
+            },
+            "instruction": {
+              "en": "Unplug the device from the outlet, then plug it back in.",
+              "nl": "Haal het apparaat uit het stopcontact en stop deze daarna weer terug."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "APC3-2300RS"
+    },
+    {
+      "name": {
+        "en": "APCR-2300"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "images": {
+        "large": "/drivers/APCR-2300/assets/images/large.jpg",
+        "small": "/drivers/APCR-2300/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press the button on your device once.",
+              "nl": "Druk een keer op de knop op het apparaat."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "APCR-2300"
+    },
+    {
+      "name": {
+        "en": "APIR-2150"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "alarm_motion"
+      ],
+      "energy": {
+        "batteries": [
+          "AAA",
+          "AAA"
+        ]
+      },
+      "images": {
+        "large": "/drivers/APIR-2150/assets/images/large.png",
+        "small": "/drivers/APIR-2150/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_transmitter_learn",
+          "options": {
+            "title": {
+              "en": "Trigger your sensor...",
+              "nl": "Laat de sensor afgaan..."
+            },
+            "instruction": {
+              "en": "Change the switch from DEL to SET or move your hand in front of the sensor.",
+              "nl": "Zet de schakelaar van DEL naar SET of beweeg je hand voor de sensor."
+            }
+          }
+        }
+      ],
+      "id": "APIR-2150",
+      "settings": [
+        {
+          "id": "timeout",
+          "type": "dropdown",
+          "value": "0",
+          "label": {
+            "en": "Timeout to reset sensor value",
+            "nl": "Vertraging om sensor waarde te resetten"
+          },
+          "hint": {
+            "en": "Please select the same setting on the physical device",
+            "nl": "Selecteer dezelfde tijd als op het fysieke apparaat"
+          },
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Never",
+                "nl": "Nooit"
+              }
+            },
+            {
+              "id": "5000",
+              "label": {
+                "en": "5 Seconds",
+                "nl": "5 Seconden"
+              }
+            },
+            {
+              "id": "10000",
+              "label": {
+                "en": "10 Seconds",
+                "nl": "10 Seconden"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "1 Minute",
+                "nl": "1 Minuut"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "2 Minutes",
+                "nl": "2 Minuten"
+              }
+            },
+            {
+              "id": "5",
+              "label": {
+                "en": "5 Minutes",
+                "nl": "5 Minuten"
+              }
+            },
+            {
+              "id": "10",
+              "label": {
+                "en": "10 Minutes",
+                "nl": "10 Minuten"
+              }
+            },
+            {
+              "id": "15",
+              "label": {
+                "en": "15 Minutes",
+                "nl": "15 Minuten"
+              }
+            },
+            {
+              "id": "30",
+              "label": {
+                "en": "30 Minutes",
+                "nl": "30 Minuten"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "ASUN-650"
+      },
+      "class": "blinds",
+      "capabilities": [
+        "windowcoverings_state"
+      ],
+      "images": {
+        "large": "/drivers/ASUN-650/assets/images/large.png",
+        "small": "/drivers/ASUN-650/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press the button on your device once.",
+              "nl": "Druk een keer op de knop op het apparaat."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "ASUN-650",
+      "settings": [
+        {
+          "id": "rotated",
+          "type": "dropdown",
+          "value": "0",
+          "label": {
+            "en": "Invert up/down signal",
+            "nl": "Inverteer omhoog/omlaag signaal"
+          },
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "No",
+                "nl": "Nee"
+              }
+            },
+            {
+              "id": "180",
+              "label": {
+                "en": "Yes",
+                "nl": "Ja"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "ATMT-502"
+      },
+      "class": "remote",
+      "capabilities": [],
+      "energy": {
+        "batteries": [
+          "CR2032",
+          "A23"
+        ]
+      },
+      "images": {
+        "large": "/drivers/ATMT-502/assets/images/large.jpg",
+        "small": "/drivers/ATMT-502/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_transmitter_learn",
+          "options": {
+            "title": {
+              "en": "Press any button",
+              "nl": "Druk op een willekeurige knop"
+            },
+            "instruction": {
+              "en": "Press any button on your device.",
+              "nl": "Druk op een willekeurige knop op het apparaat"
+            }
+          }
+        }
+      ],
+      "id": "ATMT-502"
+    },
+    {
+      "name": {
+        "en": "AWMD-250"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "images": {
+        "large": "/drivers/AWMD-250/assets/images/large.png",
+        "small": "/drivers/AWMD-250/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press the button on your device once.",
+              "nl": "Druk een keer op de knop op het apparaat."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "AWMD-250"
+    },
+    {
+      "name": {
+        "en": "AWMR-210"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "images": {
+        "large": "/drivers/AWMR-210/assets/images/large.png",
+        "small": "/drivers/AWMR-210/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press the button on your device once.",
+              "nl": "Druk een keer op de knop op het apparaat."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?"
+            }
+          }
+        }
+      ],
+      "id": "AWMR-210"
+    },
+    {
+      "name": {
+        "en": "AWMR-230"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "images": {
+        "large": "/drivers/AWMR-230/assets/images/large.png",
+        "small": "/drivers/AWMR-230/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press the button on your device once.",
+              "nl": "Druk een keer op de knop op het apparaat."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?."
+            }
+          }
+        }
+      ],
+      "id": "AWMR-230"
+    },
+    {
+      "name": {
+        "en": "AWMR-300"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "images": {
+        "large": "/drivers/AWMR-300/assets/images/large.jpg",
+        "small": "/drivers/AWMR-300/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press the button on your device once.",
+              "nl": "Druk een keer op de knop op het apparaat."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?."
+            }
+          }
+        }
+      ],
+      "id": "AWMR-300"
+    },
+    {
+      "name": {
+        "en": "AWMT-003"
+      },
+      "class": "remote",
+      "capabilities": [],
+      "energy": {
+        "batteries": [
+          "CR2032"
+        ]
+      },
+      "images": {
+        "large": "/drivers/AWMT-003/assets/images/large.jpg",
+        "small": "/drivers/AWMT-003/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_transmitter_learn",
+          "options": {
+            "title": {
+              "en": "Press any button",
+              "nl": "Druk op een willekeurige knop"
+            },
+            "instruction": {
+              "en": "Press any button on your device.",
+              "nl": "Druk op een willekeurige knop op het apparaat"
+            }
+          }
+        }
+      ],
+      "id": "AWMT-003",
+      "settings": [
+        {
+          "id": "rotated",
+          "type": "dropdown",
+          "value": "0",
+          "label": {
+            "en": "Rotate wall switch",
+            "nl": "Roteer wandschakelaar"
+          },
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Right Side Up",
+                "nl": "Rechtop"
+              }
+            },
+            {
+              "id": "180",
+              "label": {
+                "en": "Upside Down",
+                "nl": "Ondersteboven"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "AWMT-230"
+      },
+      "class": "remote",
+      "capabilities": [],
+      "images": {
+        "large": "/drivers/AWMT-230/assets/images/large.jpg",
+        "small": "/drivers/AWMT-230/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_transmitter_learn",
+          "options": {
+            "title": {
+              "en": "Press any button",
+              "nl": "Druk op een willekeurige knop"
+            },
+            "instruction": {
+              "en": "Press any button on your device.",
+              "nl": "Druk op een willekeurige knop op het apparaat"
+            }
+          }
+        }
+      ],
+      "id": "AWMT-230",
+      "settings": [
+        {
+          "id": "rotated",
+          "type": "dropdown",
+          "value": "0",
+          "label": {
+            "en": "Rotate wall switch",
+            "nl": "Roteer wandschakelaar"
+          },
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Right Side Up",
+                "nl": "Rechtop"
+              }
+            },
+            {
+              "id": "180",
+              "label": {
+                "en": "Upside Down",
+                "nl": "Ondersteboven"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "AWRT-1000"
+      },
+      "class": "remote",
+      "capabilities": [],
+      "images": {
+        "large": "/drivers/AWRT-1000/assets/images/large.jpg",
+        "small": "/drivers/AWRT-1000/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_transmitter_learn",
+          "options": {
+            "title": {
+              "en": "Press any button",
+              "nl": "Druk op een willekeurige knop"
+            },
+            "instruction": {
+              "en": "Press any button on your device.",
+              "nl": "Druk op een willekeurige knop op het apparaat"
+            }
+          }
+        }
+      ],
+      "id": "AWRT-1000"
+    },
+    {
+      "name": {
+        "en": "AWS-3500"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "images": {
+        "large": "/drivers/AWS-3500/assets/images/large.png",
+        "small": "/drivers/AWS-3500/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Press the button...",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press the button on your device once.",
+              "nl": "Druk een keer op de knop op het apparaat."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the device turn off and on?",
+              "nl": "Ging het apparaat uit en aan?."
+            }
+          }
+        }
+      ],
+      "id": "AWS-3500"
+    },
+    {
+      "name": {
+        "en": "AWST-6000"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "alarm_motion"
+      ],
+      "energy": {
+        "batteries": [
+          "AAA",
+          "AAA"
+        ]
+      },
+      "images": {
+        "large": "/drivers/AWST-6000/assets/images/large.png",
+        "small": "/drivers/AWST-6000/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_transmitter_learn",
+          "options": {
+            "title": {
+              "en": "Trigger your sensor...",
+              "nl": "Laat de sensor afgaan..."
+            },
+            "instruction": {
+              "en": "Change the switch from DEL to SET or move your hand in front of the sensor.",
+              "nl": "Zet de schakelaar van DEL naar SET of beweeg je hand voor de sensor."
+            }
+          }
+        }
+      ],
+      "id": "AWST-6000",
+      "settings": [
+        {
+          "id": "timeout",
+          "type": "dropdown",
+          "value": "0",
+          "label": {
+            "en": "Timeout to reset sensor value",
+            "nl": "Vertraging om sensor waarde te resetten"
+          },
+          "hint": {
+            "en": "Please select the same setting on the physical device",
+            "nl": "Selecteer dezelfde tijd als op het fysieke apparaat"
+          },
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Never",
+                "nl": "Nooit"
+              }
+            },
+            {
+              "id": "5000",
+              "label": {
+                "en": "5 Seconds",
+                "nl": "5 Seconden"
+              }
+            },
+            {
+              "id": "10000",
+              "label": {
+                "en": "10 Seconds",
+                "nl": "10 Seconden"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "1 Minute",
+                "nl": "1 Minuut"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "2 Minutes",
+                "nl": "2 Minuten"
+              }
+            },
+            {
+              "id": "5",
+              "label": {
+                "en": "5 Minutes",
+                "nl": "5 Minuten"
+              }
+            },
+            {
+              "id": "10",
+              "label": {
+                "en": "10 Minutes",
+                "nl": "10 Minuten"
+              }
+            },
+            {
+              "id": "15",
+              "label": {
+                "en": "15 Minutes",
+                "nl": "15 Minuten"
+              }
+            },
+            {
+              "id": "30",
+              "label": {
+                "en": "30 Minutes",
+                "nl": "30 Minuten"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "AWST-8800"
+      },
+      "class": "remote",
+      "capabilities": [],
+      "energy": {
+        "batteries": [
+          "CR2032"
+        ]
+      },
+      "images": {
+        "large": "/drivers/AWST-8800/assets/images/large.png",
+        "small": "/drivers/AWST-8800/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_transmitter_learn",
+          "options": {
+            "title": {
+              "en": "Press any button",
+              "nl": "Druk op een willekeurige knop"
+            },
+            "instruction": {
+              "en": "Press any button on your device.",
+              "nl": "Druk op een willekeurige knop op het apparaat"
+            }
+          }
+        }
+      ],
+      "id": "AWST-8800",
+      "settings": [
+        {
+          "id": "rotated",
+          "type": "dropdown",
+          "value": "0",
+          "label": {
+            "en": "Rotate wall switch",
+            "nl": "Roteer wandschakelaar"
+          },
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Right Side Up",
+                "nl": "Rechtop"
+              }
+            },
+            {
+              "id": "180",
+              "label": {
+                "en": "Upside Down",
+                "nl": "Ondersteboven"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "AWST-8802"
+      },
+      "class": "remote",
+      "capabilities": [],
+      "energy": {
+        "batteries": [
+          "CR2032"
+        ]
+      },
+      "images": {
+        "large": "/drivers/AWST-8802/assets/images/large.jpg",
+        "small": "/drivers/AWST-8802/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_transmitter_learn",
+          "options": {
+            "title": {
+              "en": "Press any button",
+              "nl": "Druk op een willekeurige knop"
+            },
+            "instruction": {
+              "en": "Press any button on your device.",
+              "nl": "Druk op een willekeurige knop op het apparaat"
+            }
+          }
+        }
+      ],
+      "id": "AWST-8802",
+      "settings": [
+        {
+          "id": "rotated",
+          "type": "dropdown",
+          "value": "0",
+          "label": {
+            "en": "Rotate wall switch",
+            "nl": "Roteer wandschakelaar"
+          },
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Right Side Up",
+                "nl": "Rechtop"
+              }
+            },
+            {
+              "id": "180",
+              "label": {
+                "en": "Upside Down",
+                "nl": "Ondersteboven"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "AYCT-102"
+      },
+      "class": "remote",
+      "capabilities": [],
+      "images": {
+        "large": "/drivers/AYCT-102/assets/images/large.jpg",
+        "small": "/drivers/AYCT-102/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_transmitter_learn",
+          "options": {
+            "title": {
+              "en": "Press any button",
+              "nl": "Druk op een willekeurige knop"
+            },
+            "instruction": {
+              "en": "Press any button on your device.",
+              "nl": "Druk op een willekeurige knop op het apparaat"
+            }
+          }
+        }
+      ],
+      "id": "AYCT-102"
+    },
+    {
+      "name": {
+        "en": "AYCT-202"
+      },
+      "class": "remote",
+      "capabilities": [],
+      "images": {
+        "large": "/drivers/AYCT-202/assets/images/large.jpg",
+        "small": "/drivers/AYCT-202/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_transmitter_learn",
+          "options": {
+            "title": {
+              "en": "Press any button",
+              "nl": "Druk op een willekeurige knop"
+            },
+            "instruction": {
+              "en": "Press any button on your device.",
+              "nl": "Druk op een willekeurige knop op het apparaat"
+            }
+          }
+        }
+      ],
+      "id": "AYCT-202"
+    },
+    {
+      "name": {
+        "en": "KCT-101"
+      },
+      "class": "remote",
+      "capabilities": [],
+      "energy": {
+        "batteries": [
+          "A23"
+        ]
+      },
+      "images": {
+        "large": "/drivers/KCT-101/assets/images/large.jpg",
+        "small": "/drivers/KCT-101/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_transmitter_learn",
+          "options": {
+            "title": {
+              "en": "Press any button",
+              "nl": "Druk op de knop"
+            },
+            "instruction": {
+              "en": "Press any button on your device.",
+              "nl": "Druk op de knop op het apparaat"
+            }
+          }
+        }
+      ],
+      "id": "KCT-101"
+    },
+    {
+      "name": {
+        "en": "KCT-510"
+      },
+      "class": "remote",
+      "capabilities": [],
+      "energy": {
+        "batteries": [
+          "CR2032"
+        ]
+      },
+      "images": {
+        "large": "/drivers/KCT-510/assets/images/large.jpg",
+        "small": "/drivers/KCT-510/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_transmitter_learn",
+          "options": {
+            "title": {
+              "en": "Press any button",
+              "nl": "Druk op de knop"
+            },
+            "instruction": {
+              "en": "Press any button on your device.",
+              "nl": "Druk op de knop op het apparaat"
+            }
+          }
+        }
+      ],
+      "id": "KCT-510"
+    },
+    {
+      "name": {
+        "en": "PA3-1000R"
+      },
+      "class": "remote",
+      "capabilities": [],
+      "energy": {
+        "batteries": [
+          "CR2032"
+        ]
+      },
+      "images": {
+        "large": "/drivers/PA3-1000R/assets/images/large.jpg",
+        "small": "/drivers/PA3-1000R/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_transmitter_learn",
+          "options": {
+            "title": {
+              "en": "Press any button",
+              "nl": "Druk op een willekeurige knop"
+            },
+            "instruction": {
+              "en": "Press any button on your device.",
+              "nl": "Druk op een willekeurige knop op het apparaat"
+            }
+          }
+        }
+      ],
+      "id": "PA3-1000R"
+    },
+    {
+      "deprecated": true,
+      "name": {
+        "en": "PAR-1000"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "images": {
+        "large": "/drivers/PAR-1000/assets/images/large.jpg",
+        "small": "/drivers/PAR-1000/assets/images/small.jpg"
+      },
+      "id": "PAR-1000"
+    },
+    {
+      "name": {
+        "en": "PIR-2050"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "alarm_motion"
+      ],
+      "energy": {
+        "batteries": [
+          "AA",
+          "AA",
+          "AA"
+        ]
+      },
+      "images": {
+        "large": "/drivers/PIR-2050/assets/images/large.jpg",
+        "small": "/drivers/PIR-2050/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_transmitter_learn",
+          "options": {
+            "title": {
+              "en": "Trigger your sensor...",
+              "nl": "Laat de sensor afgaan..."
+            },
+            "instruction": {
+              "en": "Move your hand in front of the sensor.",
+              "nl": "Beweeg je hand voor de sensor."
+            }
+          }
+        }
+      ],
+      "id": "PIR-2050",
+      "settings": [
+        {
+          "id": "timeout",
+          "type": "dropdown",
+          "value": "0",
+          "label": {
+            "en": "Timeout to reset sensor value",
+            "nl": "Vertraging om sensor waarde te resetten"
+          },
+          "hint": {
+            "en": "Please select the same setting on the physical device",
+            "nl": "Selecteer dezelfde tijd als op het fysieke apparaat"
+          },
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Never",
+                "nl": "Nooit"
+              }
+            },
+            {
+              "id": "5000",
+              "label": {
+                "en": "5 Seconds",
+                "nl": "5 Seconden"
+              }
+            },
+            {
+              "id": "10000",
+              "label": {
+                "en": "10 Seconds",
+                "nl": "10 Seconden"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "1 Minute",
+                "nl": "1 Minuut"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "2 Minutes",
+                "nl": "2 Minuten"
+              }
+            },
+            {
+              "id": "5",
+              "label": {
+                "en": "5 Minutes",
+                "nl": "5 Minuten"
+              }
+            },
+            {
+              "id": "10",
+              "label": {
+                "en": "10 Minutes",
+                "nl": "10 Minuten"
+              }
+            },
+            {
+              "id": "15",
+              "label": {
+                "en": "15 Minutes",
+                "nl": "15 Minuten"
+              }
+            },
+            {
+              "id": "30",
+              "label": {
+                "en": "30 Minutes",
+                "nl": "30 Minuten"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "deprecated": true,
+      "name": {
+        "en": "SUN-650"
+      },
+      "class": "blinds",
+      "capabilities": [
+        "windowcoverings_state"
+      ],
+      "images": {
+        "large": "/drivers/SUN-650/assets/images/large.jpg",
+        "small": "/drivers/SUN-650/assets/images/small.jpg"
+      },
+      "id": "SUN-650",
+      "settings": [
+        {
+          "id": "rotated",
+          "type": "dropdown",
+          "value": "0",
+          "label": {
+            "en": "Invert up/down signal",
+            "nl": "Inverteer omhoog/omlaag signaal"
+          },
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "No",
+                "nl": "Nee"
+              }
+            },
+            {
+              "id": "180",
+              "label": {
+                "en": "Yes",
+                "nl": "Ja"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "TMT-502"
+      },
+      "class": "remote",
+      "capabilities": [],
+      "energy": {
+        "batteries": [
+          "CR2032"
+        ]
+      },
+      "images": {
+        "large": "/drivers/TMT-502/assets/images/large.jpg",
+        "small": "/drivers/TMT-502/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_transmitter_learn",
+          "options": {
+            "title": {
+              "en": "Press any button",
+              "nl": "Druk op een willekeurige knop"
+            },
+            "instruction": {
+              "en": "Press any button on your device.",
+              "nl": "Druk op een willekeurige knop op het apparaat"
+            }
+          }
+        }
+      ],
+      "id": "TMT-502"
+    },
+    {
+      "name": {
+        "en": "WST-8700"
+      },
+      "class": "remote",
+      "capabilities": [],
+      "energy": {
+        "batteries": [
+          "A23"
+        ]
+      },
+      "images": {
+        "large": "/drivers/WST-8700/assets/images/large.jpg",
+        "small": "/drivers/WST-8700/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "rf_transmitter_learn",
+          "options": {
+            "title": {
+              "en": "Press any button",
+              "nl": "Druk op de knop"
+            },
+            "instruction": {
+              "en": "Press any button on your device.",
+              "nl": "Druk op de knop op het apparaat"
+            }
+          }
+        }
+      ],
+      "id": "WST-8700",
+      "settings": [
+        {
+          "id": "rotated",
+          "type": "dropdown",
+          "value": "0",
+          "label": {
+            "en": "Rotate wall switch",
+            "nl": "Roteer wandschakelaar"
+          },
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Right Side Up",
+                "nl": "Rechtop"
+              }
+            },
+            {
+              "id": "180",
+              "label": {
+                "en": "Upside Down",
+                "nl": "Ondersteboven"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "WST-8800"
+      },
+      "class": "remote",
+      "capabilities": [],
+      "energy": {
+        "batteries": [
+          "CR2032"
+        ]
+      },
+      "images": {
+        "large": "/drivers/WST-8800/assets/images/large.png",
+        "small": "/drivers/WST-8800/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_transmitter_learn",
+          "options": {
+            "title": {
+              "en": "Press any button",
+              "nl": "Druk op de knop"
+            },
+            "instruction": {
+              "en": "Press any button on your device.",
+              "nl": "Druk op de knop op het apparaat"
+            }
+          }
+        }
+      ],
+      "id": "WST-8800",
+      "settings": [
+        {
+          "id": "rotated",
+          "type": "dropdown",
+          "value": "0",
+          "label": {
+            "en": "Rotate wall switch",
+            "nl": "Roteer wandschakelaar"
+          },
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Right Side Up",
+                "nl": "Rechtop"
+              }
+            },
+            {
+              "id": "180",
+              "label": {
+                "en": "Upside Down",
+                "nl": "Ondersteboven"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "deprecated": true,
+      "name": {
+        "en": "YC-1000"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "images": {
+        "large": "/drivers/YC-1000/assets/images/large.jpg",
+        "small": "/drivers/YC-1000/assets/images/small.jpg"
+      },
+      "id": "YC-1000"
+    },
+    {
+      "deprecated": true,
+      "name": {
+        "en": "YC-3500"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "images": {
+        "large": "/drivers/YC-3500/assets/images/large.jpg",
+        "small": "/drivers/YC-3500/assets/images/small.jpg"
+      },
+      "id": "YC-3500"
+    },
+    {
+      "deprecated": true,
+      "name": {
+        "en": "YC-412"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "images": {
+        "large": "/drivers/YC-412/assets/images/large.jpg",
+        "small": "/drivers/YC-412/assets/images/small.jpg"
+      },
+      "id": "YC-412"
+    },
+    {
+      "name": {
+        "en": "YCT-102"
+      },
+      "class": "remote",
+      "capabilities": [],
+      "energy": {
+        "batteries": [
+          "CR2032"
+        ]
+      },
+      "images": {
+        "large": "/drivers/YCT-102/assets/images/large.png",
+        "small": "/drivers/YCT-102/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_transmitter_learn",
+          "options": {
+            "title": {
+              "en": "Press any button",
+              "nl": "Druk op een willekeurige knop"
+            },
+            "instruction": {
+              "en": "Press any button on your device.",
+              "nl": "Druk op een willekeurige knop op het apparaat"
+            }
+          }
+        }
+      ],
+      "id": "YCT-102"
+    }
+  ],
+  "flow": {
+    "triggers": [
+      {
+        "id": "ACCT-510:received",
+        "title": {
+          "en": "Button is pressed",
+          "nl": "Knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=ACCT-510"
+          },
+          {
+            "name": "state",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "On",
+                  "nl": "Aan"
+                }
+              },
+              {
+                "id": "0",
+                "label": {
+                  "en": "Off",
+                  "nl": "Uit"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ACBD-7000A:received",
+        "title": {
+          "en": "Button is pressed",
+          "nl": "Knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=ACDB-7000A"
+          }
+        ]
+      },
+      {
+        "id": "ACDB-7000B:received",
+        "title": {
+          "en": "Button is pressed",
+          "nl": "Knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=ACDB-7000B"
+          }
+        ]
+      },
+      {
+        "id": "ACBD-8000A:received",
+        "title": {
+          "en": "Button is pressed",
+          "nl": "Knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=ACDB-8000A"
+          }
+        ]
+      },
+      {
+        "id": "ACST-9900:received",
+        "title": {
+          "en": "Button is pressed",
+          "nl": "Knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=ACST-9900"
+          },
+          {
+            "name": "state",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "On",
+                  "nl": "Aan"
+                }
+              },
+              {
+                "id": "0",
+                "label": {
+                  "en": "Off",
+                  "nl": "Uit"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "AKCT-510:received",
+        "title": {
+          "en": "Button is pressed",
+          "nl": "Knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=AKCT-510"
+          },
+          {
+            "name": "state",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "On",
+                  "nl": "Aan"
+                }
+              },
+              {
+                "id": "0",
+                "label": {
+                  "en": "Off",
+                  "nl": "Uit"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "APA2-2300R:received",
+        "title": {
+          "en": "Button is pressed",
+          "nl": "Knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=APA2-2300R"
+          },
+          {
+            "name": "unit",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "00",
+                "label": {
+                  "en": "Button 1",
+                  "nl": "Knop 1"
+                }
+              },
+              {
+                "id": "01",
+                "label": {
+                  "en": "Button 2",
+                  "nl": "Knop 2"
+                }
+              },
+              {
+                "id": "g",
+                "label": {
+                  "en": "Group Button",
+                  "nl": "Groep Knop"
+                }
+              }
+            ]
+          },
+          {
+            "name": "state",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "On",
+                  "nl": "Aan"
+                }
+              },
+              {
+                "id": "0",
+                "label": {
+                  "en": "Off",
+                  "nl": "Uit"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "APA3-1500R:received",
+        "title": {
+          "en": "Button is pressed",
+          "nl": "Knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=APA3-1500R"
+          },
+          {
+            "name": "unit",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "00",
+                "label": {
+                  "en": "Button 1",
+                  "nl": "Knop 1"
+                }
+              },
+              {
+                "id": "01",
+                "label": {
+                  "en": "Button 2",
+                  "nl": "Knop 2"
+                }
+              },
+              {
+                "id": "10",
+                "label": {
+                  "en": "Button 3",
+                  "nl": "Knop 3"
+                }
+              },
+              {
+                "id": "g",
+                "label": {
+                  "en": "Group Button",
+                  "nl": "Groep Knop"
+                }
+              }
+            ]
+          },
+          {
+            "name": "state",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "On",
+                  "nl": "Aan"
+                }
+              },
+              {
+                "id": "0",
+                "label": {
+                  "en": "Off",
+                  "nl": "Uit"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "APC3-2300R:received",
+        "title": {
+          "en": "Button is pressed",
+          "nl": "Knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=APC3-2300R"
+          },
+          {
+            "name": "unit",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "00",
+                "label": {
+                  "en": "Button 1",
+                  "nl": "Knop 1"
+                }
+              },
+              {
+                "id": "01",
+                "label": {
+                  "en": "Button 2",
+                  "nl": "Knop 2"
+                }
+              },
+              {
+                "id": "10",
+                "label": {
+                  "en": "Button 3",
+                  "nl": "Knop 3"
+                }
+              },
+              {
+                "id": "g",
+                "label": {
+                  "en": "Group Button",
+                  "nl": "Groep Knop"
+                }
+              }
+            ]
+          },
+          {
+            "name": "state",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "On",
+                  "nl": "Aan"
+                }
+              },
+              {
+                "id": "0",
+                "label": {
+                  "en": "Off",
+                  "nl": "Uit"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ATMT-502:received",
+        "title": {
+          "en": "Button is pressed",
+          "nl": "Knop is ingedrukt",
+          "de": "Taste ist gedrückt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=ATMT-502"
+          },
+          {
+            "name": "unitchannel",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "0000",
+                "label": {
+                  "en": "Unit 1",
+                  "nl": "Unit 1",
+                  "de": "Element 1"
+                }
+              },
+              {
+                "id": "1000",
+                "label": {
+                  "en": "Unit 2",
+                  "nl": "Unit 2",
+                  "de": "Element 2"
+                }
+              },
+              {
+                "id": "0100",
+                "label": {
+                  "en": "Unit 3",
+                  "nl": "Unit 3",
+                  "de": "Element 3"
+                }
+              },
+              {
+                "id": "1100",
+                "label": {
+                  "en": "Unit 4",
+                  "nl": "Unit 4",
+                  "de": "Element 4"
+                }
+              },
+              {
+                "id": "0010",
+                "label": {
+                  "en": "Unit 5",
+                  "nl": "Unit 5",
+                  "de": "Element 5"
+                }
+              },
+              {
+                "id": "1010",
+                "label": {
+                  "en": "Unit 6",
+                  "nl": "Unit 6",
+                  "de": "Element 6"
+                }
+              },
+              {
+                "id": "0110",
+                "label": {
+                  "en": "Unit 7",
+                  "nl": "Unit 7",
+                  "de": "Element 7"
+                }
+              },
+              {
+                "id": "1110",
+                "label": {
+                  "en": "Unit 8",
+                  "nl": "Unit 8",
+                  "de": "Element 8"
+                }
+              },
+              {
+                "id": "0001",
+                "label": {
+                  "en": "Unit 9",
+                  "nl": "Unit 9",
+                  "de": "Element 9"
+                }
+              },
+              {
+                "id": "1001",
+                "label": {
+                  "en": "Unit 10",
+                  "nl": "Unit 10",
+                  "de": "Element 10"
+                }
+              },
+              {
+                "id": "0101",
+                "label": {
+                  "en": "Unit 11",
+                  "nl": "Unit 11",
+                  "de": "Element 11"
+                }
+              },
+              {
+                "id": "1101",
+                "label": {
+                  "en": "Unit 12",
+                  "nl": "Unit 12",
+                  "de": "Element 12"
+                }
+              },
+              {
+                "id": "0011",
+                "label": {
+                  "en": "Unit 13",
+                  "nl": "Unit 13",
+                  "de": "Element 13"
+                }
+              },
+              {
+                "id": "1011",
+                "label": {
+                  "en": "Unit 14",
+                  "nl": "Unit 14",
+                  "de": "Element 14"
+                }
+              },
+              {
+                "id": "0111",
+                "label": {
+                  "en": "Unit 15",
+                  "nl": "Unit 15",
+                  "de": "Element 15"
+                }
+              },
+              {
+                "id": "1111",
+                "label": {
+                  "en": "Unit 16",
+                  "nl": "Unit 16",
+                  "de": "Element 16"
+                }
+              }
+            ]
+          },
+          {
+            "name": "state",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "On",
+                  "nl": "Aan",
+                  "de": "An"
+                }
+              },
+              {
+                "id": "0",
+                "label": {
+                  "en": "Off",
+                  "nl": "Uit",
+                  "de": "Aus"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "AWMT-003:received",
+        "title": {
+          "en": "Button is pressed",
+          "nl": "Knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=AWMT-003"
+          },
+          {
+            "name": "unit",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "00",
+                "label": {
+                  "en": "Left Button",
+                  "nl": "Linker Knop"
+                }
+              },
+              {
+                "id": "01",
+                "label": {
+                  "en": "Right Button",
+                  "nl": "Rechter Knop"
+                }
+              }
+            ]
+          },
+          {
+            "name": "state",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "On",
+                  "nl": "Aan"
+                }
+              },
+              {
+                "id": "0",
+                "label": {
+                  "en": "Off",
+                  "nl": "Uit"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "AWMT-230:received",
+        "title": {
+          "en": "Button is pressed",
+          "nl": "Knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=AWMT-230"
+          },
+          {
+            "name": "unit",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "00",
+                "label": {
+                  "en": "Left Button",
+                  "nl": "Linker Knop"
+                }
+              },
+              {
+                "id": "01",
+                "label": {
+                  "en": "Right Button",
+                  "nl": "Rechter Knop"
+                }
+              }
+            ]
+          },
+          {
+            "name": "state",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "On",
+                  "nl": "Aan"
+                }
+              },
+              {
+                "id": "0",
+                "label": {
+                  "en": "Off",
+                  "nl": "Uit"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "AWRT-1000:rotate",
+        "title": {
+          "en": "The knob is rotated",
+          "nl": "De knop is gedraaid"
+        },
+        "tokens": [
+          {
+            "name": "value",
+            "title": {
+              "en": "Dim-level",
+              "nl": "Dim-niveau"
+            },
+            "type": "number",
+            "example": 0.5,
+            "min": 0,
+            "max": 1
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=AWRT-1000"
+          }
+        ]
+      },
+      {
+        "id": "AWRT-1000:single-tap",
+        "title": {
+          "en": "The knob has been pressed once",
+          "nl": "De knop is 1x ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=AWRT-1000"
+          }
+        ]
+      },
+      {
+        "id": "AWRT-1000:double-tap",
+        "title": {
+          "en": "The knob has been pressed twice",
+          "nl": "De knop is 2x ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=AWRT-1000"
+          }
+        ]
+      },
+      {
+        "id": "AWST-8800:received",
+        "title": {
+          "en": "Button is pressed",
+          "nl": "Knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=AWST-8800"
+          },
+          {
+            "name": "state",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "On",
+                  "nl": "Aan"
+                }
+              },
+              {
+                "id": "0",
+                "label": {
+                  "en": "Off",
+                  "nl": "Uit"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "AWST-8802:received",
+        "title": {
+          "en": "Button is pressed",
+          "nl": "Knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=AWST-8802"
+          },
+          {
+            "name": "unit",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "10",
+                "label": {
+                  "en": "Left Button",
+                  "nl": "Linker Knop"
+                }
+              },
+              {
+                "id": "11",
+                "label": {
+                  "en": "Right Button",
+                  "nl": "Rechter Knop"
+                }
+              }
+            ]
+          },
+          {
+            "name": "state",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "On",
+                  "nl": "Aan"
+                }
+              },
+              {
+                "id": "0",
+                "label": {
+                  "en": "Off",
+                  "nl": "Uit"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "AYCT-102:received",
+        "title": {
+          "en": "Button is pressed",
+          "nl": "Knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=AYCT-102"
+          },
+          {
+            "name": "channel",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "00",
+                "label": {
+                  "en": "Channel I",
+                  "nl": "Kanaal I"
+                }
+              },
+              {
+                "id": "01",
+                "label": {
+                  "en": "Channel II",
+                  "nl": "Kanaal II"
+                }
+              },
+              {
+                "id": "10",
+                "label": {
+                  "en": "Channel III",
+                  "nl": "Kanaal III"
+                }
+              },
+              {
+                "id": "11",
+                "label": {
+                  "en": "Channel IV",
+                  "nl": "Kanaal IV"
+                }
+              }
+            ]
+          },
+          {
+            "name": "unit",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "00",
+                "label": {
+                  "en": "Button 1",
+                  "nl": "Knop 1"
+                }
+              },
+              {
+                "id": "01",
+                "label": {
+                  "en": "Button 2",
+                  "nl": "Knop 2"
+                }
+              },
+              {
+                "id": "10",
+                "label": {
+                  "en": "Button 3",
+                  "nl": "Knop 3"
+                }
+              },
+              {
+                "id": "11",
+                "label": {
+                  "en": "Button 4",
+                  "nl": "Knop 4"
+                }
+              },
+              {
+                "id": "g",
+                "label": {
+                  "en": "Group Button",
+                  "nl": "Groep Knop"
+                }
+              }
+            ]
+          },
+          {
+            "name": "state",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "On",
+                  "nl": "Aan"
+                }
+              },
+              {
+                "id": "0",
+                "label": {
+                  "en": "Off",
+                  "nl": "Uit"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "AYCT-202:received",
+        "title": {
+          "en": "Button is pressed",
+          "nl": "Knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=AYCT-202"
+          },
+          {
+            "name": "channel",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "00",
+                "label": {
+                  "en": "Channel 1",
+                  "nl": "Kanaal 1"
+                }
+              },
+              {
+                "id": "10",
+                "label": {
+                  "en": "Channel 2",
+                  "nl": "Kanaal 2"
+                }
+              },
+              {
+                "id": "01",
+                "label": {
+                  "en": "Channel 3",
+                  "nl": "Kanaal 3"
+                }
+              },
+              {
+                "id": "11",
+                "label": {
+                  "en": "Channel 4",
+                  "nl": "Kanaal 4"
+                }
+              },
+              {
+                "id": "g",
+                "label": {
+                  "en": "All (G)",
+                  "nl": "Alles (G)"
+                }
+              }
+            ]
+          },
+          {
+            "name": "state",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "On",
+                  "nl": "Aan"
+                }
+              },
+              {
+                "id": "0",
+                "label": {
+                  "en": "Off",
+                  "nl": "Uit"
+                }
+              },
+              {
+                "id": "dimup",
+                "label": {
+                  "en": "Increase Brightness",
+                  "nl": "Helderheid Omhoog"
+                }
+              },
+              {
+                "id": "dimdown",
+                "label": {
+                  "en": "Decrease Brightness",
+                  "nl": "Helderheid Omlaag"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "AYCT-202:dim",
+        "title": {
+          "en": "Brightness button is pressed",
+          "nl": "Helderheid knop is ingedrukt"
+        },
+        "tokens": [
+          {
+            "name": "value",
+            "type": "number",
+            "title": {
+              "en": "Dim-level",
+              "nl": "Dim-niveau"
+            },
+            "example": 0.5
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=AYCT-202"
+          }
+        ]
+      },
+      {
+        "id": "KCT-101:received",
+        "title": {
+          "en": "Button is pressed",
+          "nl": "Knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=KCT-101"
+          },
+          {
+            "name": "state",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "On",
+                  "nl": "Aan"
+                }
+              },
+              {
+                "id": "0",
+                "label": {
+                  "en": "Off",
+                  "nl": "Uit"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "KCT-510:received",
+        "title": {
+          "en": "Button is pressed",
+          "nl": "Knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=KCT-510"
+          },
+          {
+            "name": "state",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "On",
+                  "nl": "Aan"
+                }
+              },
+              {
+                "id": "0",
+                "label": {
+                  "en": "Off",
+                  "nl": "Uit"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PA3-1000R:received",
+        "title": {
+          "en": "Button is pressed",
+          "nl": "Knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=PA3-1000R"
+          },
+          {
+            "name": "unit",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "00",
+                "label": {
+                  "en": "Button 1",
+                  "nl": "Knop 1"
+                }
+              },
+              {
+                "id": "10",
+                "label": {
+                  "en": "Button 2",
+                  "nl": "Knop 2"
+                }
+              },
+              {
+                "id": "01",
+                "label": {
+                  "en": "Button 3",
+                  "nl": "Knop 3"
+                }
+              }
+            ]
+          },
+          {
+            "name": "state",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "On",
+                  "nl": "Aan"
+                }
+              },
+              {
+                "id": "0",
+                "label": {
+                  "en": "Off",
+                  "nl": "Uit"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "TMT-502:received",
+        "title": {
+          "en": "Button is pressed",
+          "nl": "Knop is ingedrukt",
+          "de": "Taste ist gedrückt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=TMT-502"
+          },
+          {
+            "name": "unitchannel",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "0000",
+                "label": {
+                  "en": "Unit 1",
+                  "nl": "Unit 1",
+                  "de": "Element 1"
+                }
+              },
+              {
+                "id": "1000",
+                "label": {
+                  "en": "Unit 2",
+                  "nl": "Unit 2",
+                  "de": "Element 2"
+                }
+              },
+              {
+                "id": "0100",
+                "label": {
+                  "en": "Unit 3",
+                  "nl": "Unit 3",
+                  "de": "Element 3"
+                }
+              },
+              {
+                "id": "1100",
+                "label": {
+                  "en": "Unit 4",
+                  "nl": "Unit 4",
+                  "de": "Element 4"
+                }
+              },
+              {
+                "id": "0010",
+                "label": {
+                  "en": "Unit 5",
+                  "nl": "Unit 5",
+                  "de": "Element 5"
+                }
+              },
+              {
+                "id": "1010",
+                "label": {
+                  "en": "Unit 6",
+                  "nl": "Unit 6",
+                  "de": "Element 6"
+                }
+              },
+              {
+                "id": "0110",
+                "label": {
+                  "en": "Unit 7",
+                  "nl": "Unit 7",
+                  "de": "Element 7"
+                }
+              },
+              {
+                "id": "1110",
+                "label": {
+                  "en": "Unit 8",
+                  "nl": "Unit 8",
+                  "de": "Element 8"
+                }
+              },
+              {
+                "id": "0001",
+                "label": {
+                  "en": "Unit 9",
+                  "nl": "Unit 9",
+                  "de": "Element 9"
+                }
+              },
+              {
+                "id": "1001",
+                "label": {
+                  "en": "Unit 10",
+                  "nl": "Unit 10",
+                  "de": "Element 10"
+                }
+              },
+              {
+                "id": "0101",
+                "label": {
+                  "en": "Unit 11",
+                  "nl": "Unit 11",
+                  "de": "Element 11"
+                }
+              },
+              {
+                "id": "1101",
+                "label": {
+                  "en": "Unit 12",
+                  "nl": "Unit 12",
+                  "de": "Element 12"
+                }
+              },
+              {
+                "id": "0011",
+                "label": {
+                  "en": "Unit 13",
+                  "nl": "Unit 13",
+                  "de": "Element 13"
+                }
+              },
+              {
+                "id": "1011",
+                "label": {
+                  "en": "Unit 14",
+                  "nl": "Unit 14",
+                  "de": "Element 14"
+                }
+              },
+              {
+                "id": "0111",
+                "label": {
+                  "en": "Unit 15",
+                  "nl": "Unit 15",
+                  "de": "Element 15"
+                }
+              },
+              {
+                "id": "1111",
+                "label": {
+                  "en": "Unit 16",
+                  "nl": "Unit 16",
+                  "de": "Element 16"
+                }
+              }
+            ]
+          },
+          {
+            "name": "state",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "On",
+                  "nl": "Aan",
+                  "de": "An"
+                }
+              },
+              {
+                "id": "0",
+                "label": {
+                  "en": "Off",
+                  "nl": "Uit",
+                  "de": "Aus"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "WST-8700:received",
+        "title": {
+          "en": "Button is pressed",
+          "nl": "Knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=WST-8700"
+          },
+          {
+            "name": "state",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "On",
+                  "nl": "Aan"
+                }
+              },
+              {
+                "id": "0",
+                "label": {
+                  "en": "Off",
+                  "nl": "Uit"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "WST-8800:received",
+        "title": {
+          "en": "Button is pressed",
+          "nl": "Knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=WST-8800"
+          },
+          {
+            "name": "state",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "On",
+                  "nl": "Aan"
+                }
+              },
+              {
+                "id": "0",
+                "label": {
+                  "en": "Off",
+                  "nl": "Uit"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "YCT-102:received",
+        "title": {
+          "en": "Button is pressed",
+          "nl": "Knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=YCT-102"
+          },
+          {
+            "name": "channel",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "00",
+                "label": {
+                  "en": "Channel I",
+                  "nl": "Kanaal I"
+                }
+              },
+              {
+                "id": "10",
+                "label": {
+                  "en": "Channel II",
+                  "nl": "Kanaal II"
+                }
+              },
+              {
+                "id": "01",
+                "label": {
+                  "en": "Channel III",
+                  "nl": "Kanaal III"
+                }
+              },
+              {
+                "id": "11",
+                "label": {
+                  "en": "Channel IV",
+                  "nl": "Kanaal IV"
+                }
+              }
+            ]
+          },
+          {
+            "name": "unit",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "00",
+                "label": {
+                  "en": "Button 1",
+                  "nl": "Knop 1"
+                }
+              },
+              {
+                "id": "10",
+                "label": {
+                  "en": "Button 2",
+                  "nl": "Knop 2"
+                }
+              },
+              {
+                "id": "01",
+                "label": {
+                  "en": "Button 3",
+                  "nl": "Knop 3"
+                }
+              },
+              {
+                "id": "11",
+                "label": {
+                  "en": "Button 4",
+                  "nl": "Knop 4"
+                }
+              },
+              {
+                "id": "g",
+                "label": {
+                  "en": "Group Button",
+                  "nl": "Groep Knop"
+                }
+              }
+            ]
+          },
+          {
+            "name": "state",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "On",
+                  "nl": "Aan"
+                }
+              },
+              {
+                "id": "0",
+                "label": {
+                  "en": "Off",
+                  "nl": "Uit"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "id": "ACDB-6600C:doorbell",
+        "title": {
+          "en": "Ring the doorbell",
+          "nl": "Laat de deurbel afgaan"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=ACDB-6600C"
+          }
+        ]
+      },
+      {
+        "id": "ACDB-7000C:doorbell",
+        "title": {
+          "en": "Ring the doorbell",
+          "nl": "Laat de deurbel afgaan"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=ACDB-7000C"
+          }
+        ]
+      },
+      {
+        "id": "ACDB-8000C:doorbell",
+        "title": {
+          "en": "Ring the doorbell",
+          "nl": "Laat de deurbel afgaan"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=ACDB-8000C"
+          }
+        ]
+      },
+      {
+        "id": "ACDB-9000C:doorbell",
+        "title": {
+          "en": "Ring the doorbell",
+          "nl": "Laat de deurbel afgaan"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=ACDB-9000C"
+          }
+        ]
+      }
+    ]
+  },
+  "signals": {
+    "433": {
+      "kaku-new": {
+        "sof": [
+          265,
+          2580
+        ],
+        "eof": [
+          265
+        ],
+        "words": [
+          [
+            265,
+            295,
+            265,
+            1280
+          ],
+          [
+            265,
+            1280,
+            265,
+            295
+          ]
+        ],
+        "interval": 10665,
+        "sensitivity": 0.4,
+        "repetitions": 20,
+        "minimalLength": 32,
+        "maximalLength": 36
+      },
+      "kaku-new-dim": {
+        "sof": [
+          225,
+          2774
+        ],
+        "eof": [
+          236
+        ],
+        "words": [
+          [
+            265,
+            295,
+            265,
+            1280
+          ],
+          [
+            265,
+            1280,
+            265,
+            295
+          ],
+          [
+            265,
+            295,
+            265,
+            295
+          ]
+        ],
+        "interval": 10665,
+        "sensitivity": 0.4,
+        "repetitions": 20,
+        "minimalLength": 32,
+        "maximalLength": 36
+      },
+      "kaku-old": {
+        "sof": [],
+        "eof": [
+          312
+        ],
+        "words": [
+          [
+            312,
+            1090,
+            312,
+            1090
+          ],
+          [
+            312,
+            1090,
+            990,
+            400
+          ],
+          [
+            312,
+            1090,
+            312,
+            380
+          ]
+        ],
+        "interval": 11300,
+        "repetitions": 6,
+        "sensitivity": 0.5,
+        "minimalLength": 12,
+        "maximalLength": 12
+      }
+    }
+  }
+}

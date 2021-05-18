@@ -1,0 +1,45 @@
+{
+  "name": {
+    "en": "ALED-G2706"
+  },
+  "class": "light",
+  "capabilities": [
+    "onoff",
+    "dim"
+  ],
+  "energy": {
+    "usageOn": 6,
+    "usageOff": 1
+  },
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.jpg",
+    "small": "{{driverAssetsPath}}/images/small.jpg"
+  },
+  "pair": [
+    {
+      "id": "rf_receiver_learn",
+      "navigation": {
+        "next": "rf_receiver_add"
+      },
+      "options": {
+        "title": {
+          "en": "Toggle the device",
+          "nl": "Schakel het apparaat"
+        },
+        "instruction": {
+          "en": "Toggle the device three times off and on.",
+          "nl": "Schakel het apparaat drie keer uit en aan."
+        }
+      }
+    },
+    {
+      "id": "rf_receiver_add",
+      "options": {
+        "instruction": {
+          "en": "Did the device turn off and on?",
+          "nl": "Ging het apparaat uit en aan?"
+        }
+      }
+    }
+  ]
+}

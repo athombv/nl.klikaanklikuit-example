@@ -1,0 +1,50 @@
+{
+  "id": "timeout",
+  "type": "dropdown",
+  "value": "0",
+  "label": {
+    "en": "Timeout to turn off",
+    "nl": "Vertraging om uit te schakelen"
+  },
+  "hint": {
+    "en": "Please select the same setting on the physical device",
+    "nl": "Selecteer dezelfde tijd als op het fysieke apparaat"
+  },
+  "values": [
+    {
+      "id": "0",
+      "label": {
+        "en": "Never",
+        "nl": "Nooit"
+      }
+    },
+    {
+      "id": "1",
+      "label": {
+        "en": "1 Minute",
+        "nl": "1 Minuut"
+      }
+    },
+    {
+      "id": "10",
+      "label": {
+        "en": "10 Minutes",
+        "nl": "10 Minuten"
+      }
+    },
+    {
+      "id": "60",
+      "label": {
+        "en": "1 Hour",
+        "nl": "1 Uur"
+      }
+    },
+    {
+      "id": "240",
+      "label": {
+        "en": "4 Hours",
+        "nl": "4 Uur"
+      }
+    }
+  ]
+}

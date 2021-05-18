@@ -1,0 +1,40 @@
+{
+  "name": {
+    "en": "ACM-2300H"
+  },
+  "class": "socket",
+  "capabilities": [
+    "onoff"
+  ],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.jpg",
+    "small": "{{driverAssetsPath}}/images/small.jpg"
+  },
+  "pair": [
+    {
+      "id": "rf_receiver_learn",
+      "navigation": {
+        "next": "rf_receiver_add"
+      },
+      "options": {
+        "title": {
+          "en": "Press the button...",
+          "nl": "Druk op de knop..."
+        },
+        "instruction": {
+          "en": "Press the button on your device once.",
+          "nl": "Druk een keer op de knop op het apparaat."
+        }
+      }
+    },
+    {
+      "id": "rf_receiver_add",
+      "options": {
+        "instruction": {
+          "en": "Did the device turn off and on?",
+          "nl": "Ging het apparaat uit en aan?."
+        }
+      }
+    }
+  ]
+}

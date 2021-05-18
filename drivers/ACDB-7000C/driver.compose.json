@@ -1,0 +1,38 @@
+{
+  "name": {
+    "en": "ACDB-7000C"
+  },
+  "class": "doorbell",
+  "capabilities": [],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "pair": [
+    {
+      "id": "rf_receiver_learn",
+      "navigation": {
+        "next": "rf_receiver_add"
+      },
+      "options": {
+        "title": {
+          "en": "Press the button...",
+          "nl": "Druk op de knop..."
+        },
+        "instruction": {
+          "en": "Press the button on your device once. The LED should blink.",
+          "nl": "Druk een keer op de knop op het apparaat. De LED moet nu knipperen."
+        }
+      }
+    },
+    {
+      "id": "rf_receiver_add",
+      "options": {
+        "instruction": {
+          "en": "Did the device turn off and on?",
+          "nl": "Ging het apparaat uit en aan?"
+        }
+      }
+    }
+  ]
+}

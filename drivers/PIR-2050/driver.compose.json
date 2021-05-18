@@ -1,0 +1,35 @@
+{
+  "name": {
+    "en": "PIR-2050"
+  },
+  "class": "sensor",
+  "capabilities": [
+    "alarm_motion"
+  ],
+  "energy": {
+    "batteries": [
+      "AA",
+      "AA",
+      "AA"
+    ]
+  },
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.jpg",
+    "small": "{{driverAssetsPath}}/images/small.jpg"
+  },
+  "pair": [
+    {
+      "id": "rf_transmitter_learn",
+      "options": {
+        "title": {
+          "en": "Trigger your sensor...",
+          "nl": "Laat de sensor afgaan..."
+        },
+        "instruction": {
+          "en": "Move your hand in front of the sensor.",
+          "nl": "Beweeg je hand voor de sensor."
+        }
+      }
+    }
+  ]
+}

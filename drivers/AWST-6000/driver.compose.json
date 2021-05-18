@@ -1,0 +1,34 @@
+{
+  "name": {
+    "en": "AWST-6000"
+  },
+  "class": "sensor",
+  "capabilities": [
+    "alarm_motion"
+  ],
+  "energy": {
+    "batteries": [
+      "AAA",
+      "AAA"
+    ]
+  },
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "pair": [
+    {
+      "id": "rf_transmitter_learn",
+      "options": {
+        "title": {
+          "en": "Trigger your sensor...",
+          "nl": "Laat de sensor afgaan..."
+        },
+        "instruction": {
+          "en": "Change the switch from DEL to SET or move your hand in front of the sensor.",
+          "nl": "Zet de schakelaar van DEL naar SET of beweeg je hand voor de sensor."
+        }
+      }
+    }
+  ]
+}

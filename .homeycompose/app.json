@@ -1,0 +1,43 @@
+{
+  "id": "nl.klikaanklikuit",
+  "version": "7.0.3",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "name": {
+    "en": "KlikAanKlikUit"
+  },
+  "description": {
+    "en": "Remote control, affordable and easy",
+    "nl": "Draadloze bediening, betaalbaar en gemakkelijk"
+  },
+  "category": [
+    "appliances",
+    "lights",
+    "security"
+  ],
+  "tags": {
+    "en": [
+      "coco",
+      "clickonclickoff",
+      "click",
+      "trust"
+    ],
+    "nl": [
+      "kaku",
+      "klikaanklikuit",
+      "klik",
+      "trust"
+    ]
+  },
+  "permissions": [
+    "homey:wireless:433"
+  ],
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "author": {
+    "name": "Athom B.V.",
+    "email": "support@athom.com"
+  }
+}

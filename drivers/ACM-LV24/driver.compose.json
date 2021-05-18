@@ -1,0 +1,41 @@
+{
+  "name": {
+    "en": "ACM-LV24"
+  },
+  "class": "socket",
+  "capabilities": [
+    "onoff",
+    "dim"
+  ],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.jpg",
+    "small": "{{driverAssetsPath}}/images/small.jpg"
+  },
+  "pair": [
+    {
+      "id": "rf_receiver_learn",
+      "navigation": {
+        "next": "rf_receiver_add"
+      },
+      "options": {
+        "title": {
+          "en": "Trigger your sensor...",
+          "nl": "Laat de sensor afgaan..."
+        },
+        "instruction": {
+          "en": "Press the connect button one second (next to the LED indicator).",
+          "nl": "Druk 1 seconde op de verbindknop (naast de LED indicator)."
+        }
+      }
+    },
+    {
+      "id": "rf_receiver_add",
+      "options": {
+        "instruction": {
+          "en": "Did the device turn off and on?",
+          "nl": "Ging het apparaat uit en aan?"
+        }
+      }
+    }
+  ]
+}

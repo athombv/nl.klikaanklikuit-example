@@ -1,0 +1,106 @@
+{
+  "triggers": [
+    {
+      "id": "{{driverId}}:received",
+      "title": {
+        "en": "Button is pressed",
+        "nl": "Knop is ingedrukt"
+      },
+      "args": [
+        {
+          "name": "channel",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "00",
+              "label": {
+                "en": "Channel 1",
+                "nl": "Kanaal 1"
+              }
+            },
+            {
+              "id": "10",
+              "label": {
+                "en": "Channel 2",
+                "nl": "Kanaal 2"
+              }
+            },
+            {
+              "id": "01",
+              "label": {
+                "en": "Channel 3",
+                "nl": "Kanaal 3"
+              }
+            },
+            {
+              "id": "11",
+              "label": {
+                "en": "Channel 4",
+                "nl": "Kanaal 4"
+              }
+            },
+            {
+              "id": "g",
+              "label": {
+                "en": "All (G)",
+                "nl": "Alles (G)"
+              }
+            }
+          ]
+        },
+        {
+          "name": "state",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "1",
+              "label": {
+                "en": "On",
+                "nl": "Aan"
+              }
+            },
+            {
+              "id": "0",
+              "label": {
+                "en": "Off",
+                "nl": "Uit"
+              }
+            },
+            {
+              "id": "dimup",
+              "label": {
+                "en": "Increase Brightness",
+                "nl": "Helderheid Omhoog"
+              }
+            },
+            {
+              "id": "dimdown",
+              "label": {
+                "en": "Decrease Brightness",
+                "nl": "Helderheid Omlaag"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "AYCT-202:dim",
+      "title": {
+        "en": "Brightness button is pressed",
+        "nl": "Helderheid knop is ingedrukt"
+      },
+      "tokens": [
+        {
+          "name": "value",
+          "type": "number",
+          "title": {
+            "en": "Dim-level",
+            "nl": "Dim-niveau"
+          },
+          "example": 0.5
+        }
+      ]
+    }
+  ]
+}

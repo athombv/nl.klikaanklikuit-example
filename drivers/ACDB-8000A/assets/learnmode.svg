@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="960px" height="960px" viewBox="0 0 960 960" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>nl.klikaanklikuit/drivers/ACDB-9000AC/assets/learnmode</title>
+    <style type="text/css">
+    	#pair {
+    		animation: pair 2s infinite;
+    	}
+
+    	@keyframes pair {
+    		0%, 20%, 60%, 100% {
+    			fill: rgba(255,255,255,0);
+    		}
+    		40% {
+    			fill: #0074CC;
+    		}
+    	}
+    </style>
+    <g id="nl.klikaanklikuit/drivers/ACDB-9000AC/assets/learnmode" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#000000" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" x="289.508772" y="22" width="380.982456" height="915" rx="178"></rect>
+        <circle id="Oval" stroke="#000000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" cx="480" cy="678.017544" r="131"></circle>
+        <circle id="Oval" stroke="#000000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" cx="480" cy="678.017544" r="101.121169"></circle>
+        <circle id="pair" fill="#0074CC" cx="480" cy="678.017544" r="89"></circle>
+    </g>
+</svg>

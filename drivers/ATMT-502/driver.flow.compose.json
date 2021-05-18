@@ -1,0 +1,170 @@
+{
+  "triggers": [
+    {
+      "id": "ATMT-502:received",
+      "title": {
+        "en": "Button is pressed",
+        "nl": "Knop is ingedrukt",
+        "de": "Taste ist gedrückt"
+      },
+      "args": [
+        {
+          "name": "unitchannel",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "0000",
+              "label": {
+                "en": "Unit 1",
+                "nl": "Unit 1",
+                "de": "Element 1"
+              }
+            },
+            {
+              "id": "1000",
+              "label": {
+                "en": "Unit 2",
+                "nl": "Unit 2",
+                "de": "Element 2"
+              }
+            },
+            {
+              "id": "0100",
+              "label": {
+                "en": "Unit 3",
+                "nl": "Unit 3",
+                "de": "Element 3"
+              }
+            },
+            {
+              "id": "1100",
+              "label": {
+                "en": "Unit 4",
+                "nl": "Unit 4",
+                "de": "Element 4"
+              }
+            },
+            {
+              "id": "0010",
+              "label": {
+                "en": "Unit 5",
+                "nl": "Unit 5",
+                "de": "Element 5"
+              }
+            },
+            {
+              "id": "1010",
+              "label": {
+                "en": "Unit 6",
+                "nl": "Unit 6",
+                "de": "Element 6"
+              }
+            },
+            {
+              "id": "0110",
+              "label": {
+                "en": "Unit 7",
+                "nl": "Unit 7",
+                "de": "Element 7"
+              }
+            },
+            {
+              "id": "1110",
+              "label": {
+                "en": "Unit 8",
+                "nl": "Unit 8",
+                "de": "Element 8"
+              }
+            },
+            {
+              "id": "0001",
+              "label": {
+                "en": "Unit 9",
+                "nl": "Unit 9",
+                "de": "Element 9"
+              }
+            },
+            {
+              "id": "1001",
+              "label": {
+                "en": "Unit 10",
+                "nl": "Unit 10",
+                "de": "Element 10"
+              }
+            },
+            {
+              "id": "0101",
+              "label": {
+                "en": "Unit 11",
+                "nl": "Unit 11",
+                "de": "Element 11"
+              }
+            },
+            {
+              "id": "1101",
+              "label": {
+                "en": "Unit 12",
+                "nl": "Unit 12",
+                "de": "Element 12"
+              }
+            },
+            {
+              "id": "0011",
+              "label": {
+                "en": "Unit 13",
+                "nl": "Unit 13",
+                "de": "Element 13"
+              }
+            },
+            {
+              "id": "1011",
+              "label": {
+                "en": "Unit 14",
+                "nl": "Unit 14",
+                "de": "Element 14"
+              }
+            },
+            {
+              "id": "0111",
+              "label": {
+                "en": "Unit 15",
+                "nl": "Unit 15",
+                "de": "Element 15"
+              }
+            },
+            {
+              "id": "1111",
+              "label": {
+                "en": "Unit 16",
+                "nl": "Unit 16",
+                "de": "Element 16"
+              }
+            }
+          ]
+        },
+        {
+          "name": "state",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "1",
+              "label": {
+                "en": "On",
+                "nl": "Aan",
+                "de": "An"
+              }
+            },
+            {
+              "id": "0",
+              "label": {
+                "en": "Off",
+                "nl": "Uit",
+                "de": "Aus"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="960px" height="960px" viewBox="0 0 960 960" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>drivers/acst-606/assets/learnmode</title>
+    <desc>Created with Sketch.</desc>
+    <style type="text/css">
+    	#move {
+        animation: move 5s infinite;
+        animation-timing-function: ease-out;
+    	}
+
+      @keyframes move {
+        0% {
+         transform: translate(0px, 0px);
+         animation-timing-function:ease-in-out
+        }
+        40% {
+          transform: translate(-100px, 0px);
+          animation-timing-function:ease-in-out
+        }
+        100% {
+         transform: translate(0px, 0px);
+         animation-timing-function:ease-in-out
+        }
+      }
+    </style>
+    <g id="/drivers/acst-606/assets/learnmode" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <rect id="Rectangle" stroke="#000000" stroke-width="15" x="100" y="19" width="392" height="921" rx="196"/>
+        <rect id="move" stroke="#000000" stroke-width="15" x="621" y="171" width="231" height="633" rx="115.5"/>
+    </g>
+</svg>

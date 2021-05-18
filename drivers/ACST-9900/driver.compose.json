@@ -1,0 +1,26 @@
+{
+  "name": {
+    "en": "ACST-9900"
+  },
+  "class": "remote",
+  "capabilities": [],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "pair": [
+    {
+      "id": "rf_transmitter_learn",
+      "options": {
+        "title": {
+          "en": "Press the button",
+          "nl": "Druk op de knop"
+        },
+        "instruction": {
+          "en": "Press the button on your device.",
+          "nl": "Druk op de knop op het apparaat"
+        }
+      }
+    }
+  ]
+}

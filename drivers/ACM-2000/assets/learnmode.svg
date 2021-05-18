@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="960px" height="960px" viewBox="0 0 960 960" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>nl.klikaanklikuit/drivers/acm-2000/assets/learnmode</title>
+    <style type="text/css">
+    	#pair {
+    		animation: pair 2s infinite;
+    	}
+
+    	@keyframes pair {
+    		0%, 20%, 60%, 100% {
+    			fill: rgba(255,255,255,0);
+    		}
+    		40% {
+    			fill: #0074CC;
+    		}
+    	}
+    </style>
+    <g id="nl.klikaanklikuit/drivers/acm-2000/assets/learnmode" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" fill="#000000" cx="480" cy="139" r="20"></circle>
+        <circle id="pair" fill="#0074CC" cx="480" cy="292" r="21"></circle>
+        <rect id="Rectangle" stroke="#000000" stroke-width="20" x="10" y="10" width="940" height="940" rx="245"></rect>
+        <rect id="Rectangle" stroke="#000000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" x="59" y="59" width="842" height="842" rx="184"></rect>
+        <path d="M300,760 L659,760 C676.120827,760 690,773.879173 690,791 L690,960 L690,960 L269,960 L269,791 C269,773.879173 282.879173,760 300,760 Z" id="Rectangle" stroke="#000000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"></path>
+        <circle id="Oval" fill="#000000" cx="329" cy="822" r="44"></circle>
+        <circle id="Oval" fill="#000000" cx="429" cy="822" r="44"></circle>
+        <circle id="Oval" fill="#000000" cx="529" cy="822" r="44"></circle>
+        <circle id="Oval" fill="#000000" cx="629" cy="822" r="44"></circle>
+        <rect id="Rectangle" stroke="#000000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" x="448" y="104" width="63" height="222" rx="31.5"></rect>
+    </g>
+</svg>

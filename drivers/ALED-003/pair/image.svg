@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="960px" height="960px" viewBox="0 0 960 960" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>driver/ALED-003/assets/learnmode</title>
+    <desc>Created with Sketch.</desc>
+    <style type="text/css">
+	.blink {
+		animation: blink 4s infinite;
+	}
+	
+	@keyframes blink {
+		/* 7s, 2 seconds for move, 5 seconds for blink &gt; 10 pieces */ 
+		0%, 70%, 90%, 100% { 
+			fill: rgb(255,255,255);
+		}
+		80%{
+			fill: #0074CC;
+		}
+	}
+	.move {
+		animation: move 4s infinite;
+	}
+	
+	@keyframes move {
+		/* 7s, 2 seconds for move, 5 seconds for blink */ 
+		0%, 10%, 60%, 70%, 80%, 90%, 100% { 
+			transform: translate3d(769px, 225px, 0px);
+		}
+		25%, 40%{
+			transform: translate3d(769px, 300px, 0px);
+		}
+	}	
+	</style>
+    <g id="driver/ALED-003/assets/learnmode" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#000000" stroke-width="20" x="13" y="13" width="934" height="934" rx="22"/>
+        <path d="M909,51 L909,909 L557,909 L557,898 L403,898 L403,909 L51,909 L51,51 L909,51 Z" id="Combined-Shape" stroke="#000000" stroke-width="10"/>
+        <rect id="Rectangle" stroke="#000000" stroke-width="10" stroke-linejoin="round" x="86" y="182" width="116" height="562"/>
+        <rect id="Rectangle" stroke="#000000" stroke-width="10" stroke-linejoin="round" x="756" y="182" width="116" height="562"/>
+        <rect id="Rectangle" stroke="#000000" stroke-width="10" stroke-linejoin="round" x="206" y="766" width="550" height="116"/>
+        <g id="Battery" transform="translate(100.000000, 225.000000)">
+            <rect id="Rectangle" stroke="#000000" stroke-width="10" x="0" y="17" width="90" height="459" rx="13"/>
+            <ellipse id="Oval" fill="#000000" cx="46" cy="115.5" rx="23" ry="23.5"/>
+            <ellipse id="Oval" fill="#000000" cx="46" cy="373.5" rx="23" ry="23.5"/>
+            <path d="M27,0 L64,0 C66.7614237,-5.07265313e-16 69,2.23857625 69,5 L69,17 C69,17.5522847 68.5522847,18 68,18 L23,18 C22.4477153,18 22,17.5522847 22,17 L22,5 C22,2.23857625 24.2385763,5.07265313e-16 27,0 Z" id="Rectangle" fill="#000000"/>
+            <rect id="Rectangle" fill="#FFFFFF" x="33" y="113" width="25" height="6"/>
+            <polygon id="Rectangle" fill="#FFFFFF" transform="translate(45.500000, 116.000000) rotate(90.000000) translate(-45.500000, -116.000000) " points="33 113 58 113 58 119 33 119"/>
+            <rect id="Rectangle" fill="#FFFFFF" x="33" y="370" width="25" height="6"/>
+        </g>
+        <g id="pair" class="move" transform="translate(769.000000, 225.000000)">
+            <rect id="Rectangle" class="blink" stroke="#000000" stroke-width="10" fill="#FFFFFF" x="0" y="17" width="90" height="459" rx="13"/>
+            <ellipse id="Oval" fill="#000000" cx="46" cy="115.5" rx="23" ry="23.5"/>
+            <ellipse id="Oval" fill="#000000" cx="46" cy="373.5" rx="23" ry="23.5"/>
+            <path d="M27,0 L64,0 C66.7614237,-5.07265313e-16 69,2.23857625 69,5 L69,17 C69,17.5522847 68.5522847,18 68,18 L23,18 C22.4477153,18 22,17.5522847 22,17 L22,5 C22,2.23857625 24.2385763,5.07265313e-16 27,0 Z" id="Rectangle" fill="#000000"/>
+            <rect id="Rectangle" fill="#FFFFFF" x="33" y="113" width="25" height="6"/>
+            <polygon id="Rectangle" fill="#FFFFFF" transform="translate(45.500000, 116.000000) rotate(90.000000) translate(-45.500000, -116.000000) " points="33 113 58 113 58 119 33 119"/>
+            <rect id="Rectangle" fill="#FFFFFF" x="33" y="370" width="25" height="6"/>
+        </g>
+        <g id="Battery2" transform="translate(481.000000, 825.000000) rotate(-90.000000) translate(-481.000000, -825.000000) translate(436.000000, 587.000000)">
+            <rect id="Rectangle" stroke="#000000" stroke-width="10" x="-0.5" y="16.5" width="90" height="459" rx="13"/>
+            <ellipse id="Oval" fill="#000000" cx="45.5" cy="115" rx="23" ry="23.5"/>
+            <ellipse id="Oval" fill="#000000" cx="45.5" cy="373" rx="23" ry="23.5"/>
+            <path d="M26.5,-0.5 L63.5,-0.5 C66.2614237,-0.5 68.5,1.73857625 68.5,4.5 L68.5,16.5 C68.5,17.0522847 68.0522847,17.5 67.5,17.5 L22.5,17.5 C21.9477153,17.5 21.5,17.0522847 21.5,16.5 L21.5,4.5 C21.5,1.73857625 23.7385763,-0.5 26.5,-0.5 Z" id="Rectangle" fill="#000000"/>
+            <rect id="Rectangle" fill="#FFFFFF" x="33.5" y="112.5" width="25" height="6"/>
+            <polygon id="Rectangle" fill="#FFFFFF" transform="translate(46.000000, 115.500000) rotate(90.000000) translate(-46.000000, -115.500000) " points="33.5 112.5 58.5 112.5 58.5 118.5 33.5 118.5"/>
+            <rect id="Rectangle" fill="#FFFFFF" x="33.5" y="369.5" width="25" height="6"/>
+        </g>
+    </g>
+</svg>

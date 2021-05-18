@@ -1,0 +1,60 @@
+{
+  "triggers": [
+    {
+      "id": "APA2-2300R:received",
+      "title": {
+        "en": "Button is pressed",
+        "nl": "Knop is ingedrukt"
+      },
+      "args": [
+        {
+          "name": "unit",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "00",
+              "label": {
+                "en": "Button 1",
+                "nl": "Knop 1"
+              }
+            },
+            {
+              "id": "01",
+              "label": {
+                "en": "Button 2",
+                "nl": "Knop 2"
+              }
+            },
+            {
+              "id": "g",
+              "label": {
+                "en": "Group Button",
+                "nl": "Groep Knop"
+              }
+            }
+          ]
+        },
+        {
+          "name": "state",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "1",
+              "label": {
+                "en": "On",
+                "nl": "Aan"
+              }
+            },
+            {
+              "id": "0",
+              "label": {
+                "en": "Off",
+                "nl": "Uit"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

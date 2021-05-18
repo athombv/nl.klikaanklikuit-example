@@ -1,0 +1,78 @@
+{
+  "id": "timeout",
+  "type": "dropdown",
+  "value": "0",
+  "label": {
+    "en": "Timeout to reset sensor value",
+    "nl": "Vertraging om sensor waarde te resetten"
+  },
+  "hint": {
+    "en": "Please select the same setting on the physical device",
+    "nl": "Selecteer dezelfde tijd als op het fysieke apparaat"
+  },
+  "values": [
+    {
+      "id": "0",
+      "label": {
+        "en": "Never",
+        "nl": "Nooit"
+      }
+    },
+    {
+      "id": "5000",
+      "label": {
+        "en": "5 Seconds",
+        "nl": "5 Seconden"
+      }
+    },
+    {
+      "id": "10000",
+      "label": {
+        "en": "10 Seconds",
+        "nl": "10 Seconden"
+      }
+    },
+    {
+      "id": "1",
+      "label": {
+        "en": "1 Minute",
+        "nl": "1 Minuut"
+      }
+    },
+    {
+      "id": "2",
+      "label": {
+        "en": "2 Minutes",
+        "nl": "2 Minuten"
+      }
+    },
+    {
+      "id": "5",
+      "label": {
+        "en": "5 Minutes",
+        "nl": "5 Minuten"
+      }
+    },
+    {
+      "id": "10",
+      "label": {
+        "en": "10 Minutes",
+        "nl": "10 Minuten"
+      }
+    },
+    {
+      "id": "15",
+      "label": {
+        "en": "15 Minutes",
+        "nl": "15 Minuten"
+      }
+    },
+    {
+      "id": "30",
+      "label": {
+        "en": "30 Minutes",
+        "nl": "30 Minuten"
+      }
+    }
+  ]
+}

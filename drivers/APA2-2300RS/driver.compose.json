@@ -1,0 +1,40 @@
+{
+  "name": {
+    "en": "APA2-2300R"
+  },
+  "class": "socket",
+  "capabilities": [
+    "onoff"
+  ],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.jpg",
+    "small": "{{driverAssetsPath}}/images/small.jpg"
+  },
+  "pair": [
+    {
+      "id": "rf_receiver_learn",
+      "navigation": {
+        "next": "rf_receiver_add"
+      },
+      "options": {
+        "title": {
+          "en": "Unplug the device...",
+          "nl": "Verwijder het apparaat..."
+        },
+        "instruction": {
+          "en": "Unplug the device from the outlet, then plug it back in.",
+          "nl": "Haal het apparaat uit het stopcontact en stop deze daarna weer terug."
+        }
+      }
+    },
+    {
+      "id": "rf_receiver_add",
+      "options": {
+        "instruction": {
+          "en": "Did the device turn off and on?",
+          "nl": "Ging het apparaat uit en aan?"
+        }
+      }
+    }
+  ]
+}

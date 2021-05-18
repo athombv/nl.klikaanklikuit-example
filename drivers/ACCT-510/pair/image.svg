@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="960px" height="960px" viewBox="0 0 960 960" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>drivers/acct-510/assets/learnmode</title>
+    <desc>Created with Sketch.</desc>
+    <style type="text/css">
+    	#pair {
+    		animation: pair 2s infinite;
+    	}
+
+    	@keyframes pair {
+    		0%, 20%, 80%, 100% {
+    			fill: rgba(255,255,255,0);
+    		}
+    		50% {
+    			fill: #0074CC;
+    		}
+    	}
+    </style>
+    <g id="/drivers/acct-510/assets/learnmode" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <ellipse id="Oval" stroke="#000000" stroke-width="15" stroke-linejoin="round" cx="480" cy="507" rx="313" ry="437"/>
+        <path d="M575.715011,813.057102 C577.422552,811.985439 579.631136,813.271788 579.541501,815.28577 C578.667461,834.924246 577.411889,850.780272 575.771144,862.867276 L575.771144,862.867276 L575.583753,864.219516 C575.469926,865.02407 574.97218,865.723113 574.249134,866.09388 C544.186488,881.50956 512.23866,889.5 479.5,889.5 C446.761849,889.5 414.814079,881.509815 384.749938,866.094607 C384.026784,865.723814 383.528986,865.024656 383.415215,864.219986 C381.777604,852.63768 380.510385,837.429061 379.610606,818.584616 L379.610606,818.584616 L379.458544,815.286771 C379.369191,813.279184 381.564984,811.991991 383.273091,813.050651 C413.32936,831.679094 445.928207,841.420162 479.5,841.420162 C512.9104,841.420162 545.358973,831.772647 575.283051,813.328202 L575.283051,813.328202 Z" id="Combined-Shape" fill="#000000"/>
+        <ellipse id="Oval" stroke="#000000" stroke-width="7.5" stroke-linejoin="round" cx="480.5" cy="588.5" rx="121.5" ry="164.5"/>
+        <ellipse id="pair" fill="#0074CC" cx="480.5" cy="588.5" rx="109.5" ry="152.5"/>
+        <path d="M426,0 C430.126628,32.0653205 433.793295,55.3986538 437,70" id="Path-2" stroke="#000000" stroke-width="7.5" stroke-linejoin="round"/>
+        <path d="M541,0 C541,24.9041869 539.333333,48.2375202 536,70" id="Path-3" stroke="#000000" stroke-width="7.5" stroke-linejoin="round"/>
+    </g>
+</svg>

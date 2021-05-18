@@ -1,0 +1,31 @@
+{
+  "name": {
+    "en": "KCT-510"
+  },
+  "class": "remote",
+  "capabilities": [],
+  "energy": {
+    "batteries": [
+      "CR2032"
+    ]
+  },
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.jpg",
+    "small": "{{driverAssetsPath}}/images/small.jpg"
+  },
+  "pair": [
+    {
+      "id": "rf_transmitter_learn",
+      "options": {
+        "title": {
+          "en": "Press any button",
+          "nl": "Druk op de knop"
+        },
+        "instruction": {
+          "en": "Press any button on your device.",
+          "nl": "Druk op de knop op het apparaat"
+        }
+      }
+    }
+  ]
+}

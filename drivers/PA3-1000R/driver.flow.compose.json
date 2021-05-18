@@ -1,0 +1,60 @@
+{
+  "triggers": [
+    {
+      "id": "PA3-1000R:received",
+      "title": {
+        "en": "Button is pressed",
+        "nl": "Knop is ingedrukt"
+      },
+      "args": [
+        {
+          "name": "unit",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "00",
+              "label": {
+                "en": "Button 1",
+                "nl": "Knop 1"
+              }
+            },
+            {
+              "id": "10",
+              "label": {
+                "en": "Button 2",
+                "nl": "Knop 2"
+              }
+            },
+            {
+              "id": "01",
+              "label": {
+                "en": "Button 3",
+                "nl": "Knop 3"
+              }
+            }
+          ]
+        },
+        {
+          "name": "state",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "1",
+              "label": {
+                "en": "On",
+                "nl": "Aan"
+              }
+            },
+            {
+              "id": "0",
+              "label": {
+                "en": "Off",
+                "nl": "Uit"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

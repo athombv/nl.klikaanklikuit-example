@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="960px" height="960px" viewBox="0 0 960 960" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>drivers/acst-9900/assets/learnmode</title>
+    <desc>Created with Sketch.</desc>
+    <g id="/drivers/acst-9900/assets/learnmode" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" stroke="#000000" stroke-width="15" stroke-linejoin="round" cx="480.5" cy="480.5" r="461.5"></circle>
+        <circle id="Oval" stroke="#000000" stroke-width="7.5" stroke-linejoin="round" cx="480.5" cy="480.5" r="412.5"></circle>
+        <circle id="pair" fill="#0074CC" cx="480.5" cy="480.5" r="392.5"></circle>
+    </g>
+</svg>

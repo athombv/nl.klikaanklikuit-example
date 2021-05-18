@@ -1,0 +1,11 @@
+{
+  "actions": [
+    {
+      "id": "ACDB-8000C:doorbell",
+      "title": {
+        "en": "Ring the doorbell",
+        "nl": "Laat de deurbel afgaan"
+      }
+    }
+  ]
+}

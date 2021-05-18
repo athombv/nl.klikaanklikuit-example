@@ -1,0 +1,31 @@
+{
+  "name": {
+    "en": "ACDB-7000B"
+  },
+  "class": "remote",
+  "capabilities": [],
+  "energy": {
+    "batteries": [
+      "A23"
+    ]
+  },
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "pair": [
+    {
+      "id": "rf_transmitter_learn",
+      "options": {
+        "title": {
+          "en": "Press the button",
+          "nl": "Druk op de knop"
+        },
+        "instruction": {
+          "en": "Press the button on your device.",
+          "nl": "Druk op de knop op het apparaat"
+        }
+      }
+    }
+  ]
+}

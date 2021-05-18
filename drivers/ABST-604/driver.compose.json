@@ -1,0 +1,34 @@
+{
+  "name": {
+    "en": "ABST-604"
+  },
+  "class": "sensor",
+  "capabilities": [
+    "alarm_night"
+  ],
+  "energy": {
+    "batteries": [
+      "AAA",
+      "AAA"
+    ]
+  },
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "pair": [
+    {
+      "id": "rf_transmitter_learn",
+      "options": {
+        "title": {
+          "en": "Trigger your sensor...",
+          "nl": "Laat de sensor afgaan..."
+        },
+        "instruction": {
+          "en": "Trigger your sensor manually or toggle the learn switch to DEL and then back to SET..",
+          "nl": "Laat de sensor handmatig afgaan of schuif de learn knop naar DEL en terug naar SET.."
+        }
+      }
+    }
+  ]
+}
